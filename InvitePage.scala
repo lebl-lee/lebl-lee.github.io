@@ -34,7 +34,7 @@ import scala.scalajs.js.URIUtils
 //        li(a(href := "#phonebook", cls := "hover:text-pink-600")("Photobook")),
 //        li(a(href := "#schedule", cls := "hover:text-pink-600")("Calendar")),
 
-        li(
+        li(cls := "relative flex items-center group")(
           a(href := "#rsvp", cls := "hover:text-pink-600 font-semibold")("RSVP")
         ),
         li(cls := "relative flex items-center group")(
