@@ -22,8 +22,26 @@ import scala.scalajs.js.URIUtils
 @main def WeddingInvite(): Unit = {
   val lang = LanguageManager.currentLang
 
+  lazy val content = div(
+    navBar,
+    countdownSection,
+    headerSection,
+    inviteText,
+    scheduleSection,
+    ourStorySection,
+    footerSection
+  )
+  document.head.appendChild(tailwindCss.render)
+  document.head.appendChild(styles.render)
+  document.body.appendChild(content.render)
+
+  // Initial call to display countdown immediately
+  updateCountdown()
+  LanguageManager.setLanguage(lang)
+  dom.window.setInterval(() => updateCountdown(), 1000)
+
   // script https://cdn.tailwindcss.com
-  val navBar = nav(cls := "bg-white shadow-md sticky top-0 z-50")(
+  lazy val navBar = nav(cls := "bg-white shadow-md sticky top-0 z-50")(
     div(cls := "max-w-6xl mx-auto px-4 py-3 flex justify-between items-center")(
       a(href := "#", cls := "text-xl font-semibold text-pink-600 script-font")(
         "David & Suhyoon"
@@ -101,7 +119,7 @@ import scala.scalajs.js.URIUtils
     )
   )
 
-  val headerSection = header(
+  lazy val headerSection = header(
     id := "invite",
     cls := "bg-white text-center py-10 flex justify-center px-4"
   )(
@@ -154,7 +172,7 @@ import scala.scalajs.js.URIUtils
   )
 
   // Add this countdown section after the headerSection:
-  val countdownSection = section(cls := "py-6 text-center bg-pink-50")(
+  lazy val countdownSection = section(cls := "py-6 text-center bg-pink-50")(
     h3(
       cls := "text-2xl mb-4 text-gray-800",
       i18n := WeddingText.countdownTitle.c
@@ -179,7 +197,7 @@ import scala.scalajs.js.URIUtils
     )
   )
 
-  val inviteText = section(cls := "bg-white text-center py-8 px-4")(
+  lazy val inviteText = section(cls := "bg-white text-center py-8 px-4")(
     p(cls := "text-lg max-w-2xl mx-auto mb-8", Wedding.inviteText.i18nAttr)(
       "We invite you to celebrate our wedding day with us on ",
       strong(weddingDateFormatted),
@@ -342,7 +360,7 @@ import scala.scalajs.js.URIUtils
   )
 
   // Add this section after the inviteText and before the rsvpSection:
-  val scheduleSection =
+  lazy val scheduleSection =
     section(id := "schedule", cls := "py-12 px-6 bg-gray-50")(
       h2(
         cls := "text-3xl font-semibold text-center mb-8 script-font text-pink-600",
@@ -373,62 +391,33 @@ import scala.scalajs.js.URIUtils
       )
     )
 
-  val previewLinksSection = section(cls := "py-12 px-6")(
-    div(cls := "max-w-6xl mx-auto")(
-      h2(
-        cls := "text-3xl font-semibold text-center mb-8 script-font text-pink-600"
-      )(
-        "Explore More"
-      ),
-      div(cls := "grid md:grid-cols-3 gap-8")(
-        // Photo Book Preview Card
-        a(href := "#photo-book", cls := "group")(
-          div(
-            cls := "bg-white rounded-lg shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl"
-          )(
-            div(cls := "relative aspect-[4/3]")(
-              img(
-                src := "./images/photo-book-preview.jpg",
-                alt := "Photo Book Preview",
-                cls := "w-full h-full object-cover",
-                onerror := "this.src='data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" viewBox=\"0 0 100 100\"%3E%3Crect width=\"100%\" height=\"100%\" fill=\"%23f3f4f6\"%3E%3C/rect%3E%3Ctext x=\"50%\" y=\"50%\" dominant-baseline=\"middle\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" fill=\"%239ca3af\"%3EImage Coming Soon%3C/text%3E%3C/svg%3E'"
-              )
-            ),
-            div(cls := "p-4")(
-              h3(cls := "text-xl font-semibold mb-2 text-pink-600")(
-                "Photo Book"
-              ),
-              p(cls := "text-gray-600")("Collection of our precious moments")
-            )
-          )
+  lazy val footerSection = section(cls := "py-8 px-6 bg-gray-100")(
+    div(cls := "max-w-6xl mx-auto text-center")(
+      div(cls := "flex items-center justify-center gap-2")(
+        "Powered by ",
+        a(href := "https://www.scala-lang.org/", target := "_blank", cls := "flex items-center")(
+          img(
+            src := "https://www.scala-lang.org/resources/img/frontpage/scala-spiral.png",
+            alt := "Scala Logo",
+            cls := "h-10 w-6 mr-2"
+          ),
+          "Scala"
         ),
-        // Recommendations Preview Card
-        a(href := "#recommendation", cls := "group")(
-          div(
-            cls := "bg-white rounded-lg shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl"
-          )(
-            div(cls := "relative aspect-[4/3]")(
-              img(
-                src := "./images/recommendations-preview.jpg",
-                alt := "Recommendations Preview",
-                cls := "w-full h-full object-cover",
-                onerror := "this.src='data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" viewBox=\"0 0 100 100\"%3E%3Crect width=\"100%\" height=\"100%\" fill=\"%23f3f4f6\"%3E%3C/rect%3E%3Ctext x=\"50%\" y=\"50%\" dominant-baseline=\"middle\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" fill=\"%239ca3af\"%3EImage Coming Soon%3C/text%3E%3C/svg%3E'"
-              )
-            ),
-            div(cls := "p-4")(
-              h3(cls := "text-xl font-semibold mb-2 text-pink-600")(
-                "Prague Recommendations"
-              ),
-              p(cls := "text-gray-600")("Places to visit and things to do")
-            )
-          )
+        " & ",
+        a(href := "https://www.scala-js.org/", target := "_blank", cls := "flex items-center")(
+          img(
+            src := "https://www.scala-js.org/assets/img/scala-js-logo.svg",
+            alt := "Scala.js Logo",
+            cls := "h-10 mr-2"
+          ),
+          "Scala.js"
         )
       )
     )
   )
 
   // Add these style definitions to create a pulse animation when numbers change
-  val styles = scalatags.JsDom.tags2.style(
+  lazy val styles = scalatags.JsDom.tags2.style(
     """
     @keyframes pulse {
       0% { transform: scale(1); }
@@ -441,25 +430,10 @@ import scala.scalajs.js.URIUtils
     """
   )
 
-  val tailwindCss = script(src := "https://cdn.tailwindcss.com")
-  document.head.appendChild(tailwindCss.render)
+  lazy val tailwindCss = script(src := "https://cdn.tailwindcss.com")
 
-  document.head.appendChild(styles.render)
-  // Add the styles to the content:
-  val content = div(
-    navBar,
-    countdownSection,
-    headerSection,
-    inviteText,
-    scheduleSection,
-    ourStorySection,
-    previewLinksSection
-  )
-  document.body.appendChild(content.render)
-
-  val formElem = document.getElementById("rsvpForm")
-  val messageElem = document.getElementById("rsvpMessage")
-
+  lazy val formElem = document.getElementById("rsvpForm")
+  lazy val messageElem = document.getElementById("rsvpMessage")
   formElem.addEventListener(
     "submit",
     (e: dom.Event) => {
@@ -484,13 +458,6 @@ import scala.scalajs.js.URIUtils
     document.getElementById("minutes").textContent = minutes.toString
     document.getElementById("seconds").textContent = seconds.toString
   }
-
-  // Initial call to display countdown immediately
-  updateCountdown()
-  LanguageManager.setLanguage(lang)
-
-  // Update the countdown every second
-  dom.window.setInterval(() => updateCountdown(), 1000)
 
 }
 
