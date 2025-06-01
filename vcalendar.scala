@@ -3,11 +3,12 @@ import scala.scalajs.js.Date
 import scala.scalajs.js.URIUtils
 
 case class InviteCalendar(
-                           begin: Date,
-                           end: Date,
-                           summary: String,
-                           description: String,
-                           location: String) {
+    begin: Date,
+    end: Date,
+    summary: String,
+    description: String,
+    location: String
+) {
   def data =
     s"""BEGIN:VCALENDAR
        |VERSION:2.0
@@ -20,5 +21,6 @@ case class InviteCalendar(
        |END:VEVENT
        |END:VCALENDAR""".stripMargin
 
-  def link = s"data:text/calendar;charset=utf-8,${URIUtils.encodeURIComponent(data)}"
+  def link =
+    s"data:text/calendar;charset=utf-8,${URIUtils.encodeURIComponent(data)}"
 }

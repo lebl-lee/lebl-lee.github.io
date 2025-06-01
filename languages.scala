@@ -13,7 +13,7 @@ object I18n:
   var dynamicItems = Map[String, I18n]()
   // never in production
   def apply(en: String, cs: String, kr: String) =
-    val res = new I18n(en,cs,kr)
+    val res = new I18n(en, cs, kr)
     dynamicItems = dynamicItems + (res.c -> res)
     res
 
@@ -26,7 +26,6 @@ object Language:
     .find(_.toString.toLowerCase == value.toLowerCase)
     .getOrElse(Other(value))
 
-
 def detectedRegion(): Language = {
   val languageMap = Map(
     "cs" -> Language.CS,
@@ -35,10 +34,14 @@ def detectedRegion(): Language = {
     "ko-KR" -> Language.KR
   )
 
-  val browserLang = js.Dynamic.global.navigator.language.asInstanceOf[String].toLowerCase()
-  languageMap.find { case (prefix, _) =>
-    browserLang.startsWith(prefix)
-  }.map(_._2).getOrElse(Language.EN)
+  val browserLang =
+    js.Dynamic.global.navigator.language.asInstanceOf[String].toLowerCase()
+  languageMap
+    .find { case (prefix, _) =>
+      browserLang.startsWith(prefix)
+    }
+    .map(_._2)
+    .getOrElse(Language.EN)
 }
 
 // Language manager
@@ -72,7 +75,8 @@ object LanguageManager {
           case Language.EN => translation.en
           case Language.CS => translation.cs
           case Language.KR => translation.kr
-          case Language.Other(otherLang)    => translation.en // fallback to English
+          case Language.Other(otherLang) =>
+            translation.en // fallback to English
         }
       }
       .getOrElse(key)

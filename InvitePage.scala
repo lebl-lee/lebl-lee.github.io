@@ -66,7 +66,10 @@ import scala.scalajs.js.URIUtils
               cls := "px-4 py-2 hover:bg-gray-100 cursor-pointer",
               onclick := { () =>
                 document.getElementById("selectedLang").textContent = "EN"
-                document.getElementById("langSelectDropdown").classList.add("hidden")
+                document
+                  .getElementById("langSelectDropdown")
+                  .classList
+                  .add("hidden")
                 LanguageManager.setLanguage(_.EN)
               }
             )("EN"),
@@ -74,7 +77,10 @@ import scala.scalajs.js.URIUtils
               cls := "px-4 py-2 hover:bg-gray-100 cursor-pointer",
               onclick := { () =>
                 document.getElementById("selectedLang").textContent = "CS"
-                document.getElementById("langSelectDropdown").classList.add("hidden")
+                document
+                  .getElementById("langSelectDropdown")
+                  .classList
+                  .add("hidden")
                 LanguageManager.setLanguage(_.CS)
               }
             )("CS"),
@@ -82,7 +88,10 @@ import scala.scalajs.js.URIUtils
               cls := "px-4 py-2 hover:bg-gray-100 cursor-pointer",
               onclick := { () =>
                 document.getElementById("selectedLang").textContent = "KR"
-                document.getElementById("langSelectDropdown").classList.add("hidden")
+                document
+                  .getElementById("langSelectDropdown")
+                  .classList
+                  .add("hidden")
                 LanguageManager.setLanguage(_.KR)
               }
             )("KR")
@@ -127,11 +136,18 @@ import scala.scalajs.js.URIUtils
           )((WeddingText.photobook.en))
         ),
         // Gradient overlay for bottom text
-        div(cls := "absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-black/40 to-transparent"),
+        div(
+          cls := "absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-black/40 to-transparent"
+        ),
         // Content container
         div(cls := "relative z-10 px-4 pb-16")(
-          h1(cls := "text-6xl script-font text-white")(Wedding.brideAndGroomName),
-          p(cls := "text-2xl mt-4 text-white", i18n := WeddingText.gettingMaried.c)(WeddingText.gettingMaried.en)
+          h1(cls := "text-6xl script-font text-white")(
+            Wedding.brideAndGroomName
+          ),
+          p(
+            cls := "text-2xl mt-4 text-white",
+            i18n := WeddingText.gettingMaried.c
+          )(WeddingText.gettingMaried.en)
         )
       )
     )
@@ -139,7 +155,10 @@ import scala.scalajs.js.URIUtils
 
   // Add this countdown section after the headerSection:
   val countdownSection = section(cls := "py-6 text-center bg-pink-50")(
-    h3(cls := "text-2xl mb-4 text-gray-800", i18n := WeddingText.countdownTitle.c)(WeddingText.countdownTitle.en),
+    h3(
+      cls := "text-2xl mb-4 text-gray-800",
+      i18n := WeddingText.countdownTitle.c
+    )(WeddingText.countdownTitle.en),
     div(cls := "grid grid-cols-4 max-w-2xl mx-auto gap-4")(
       div(cls := "bg-white p-4 rounded-lg shadow-sm")(
         div(id := "days", cls := "text-3xl font-bold text-pink-600")("0"),
@@ -169,7 +188,9 @@ import scala.scalajs.js.URIUtils
       "."
     ),
     // Action buttons container
-    div(cls := "max-w-2xl mx-auto mb-8")(Elements.downloadCalendar(Wedding.inviteCalendar)),
+    div(cls := "max-w-2xl mx-auto mb-8")(
+      Elements.downloadCalendar(Wedding.inviteCalendar)
+    ),
     // Map and RSVP container with grid
     div(cls := "max-w-5xl mx-auto grid md:grid-cols-2 gap-8")(
       // Left column with Venue Image and Map as separate cards
@@ -184,7 +205,9 @@ import scala.scalajs.js.URIUtils
             )
           ),
           div(cls := "p-4 border-t")(
-            h3(cls := "text-lg font-semibold text-gray-800 mb-2")(Wedding.addressBuilding),
+            h3(cls := "text-lg font-semibold text-gray-800 mb-2")(
+              Wedding.addressBuilding
+            ),
             p(cls := "text-gray-600 text-sm")(Wedding.addressLocation)
           )
         ),
@@ -250,7 +273,9 @@ import scala.scalajs.js.URIUtils
           p(cls := "text-gray-500 px-4")("or"),
           div(cls := "flex-grow border-t border-gray-300")
         ),
-        p(cls := "text-red-600 mb-4 text-center")("RSVP form not working yet, please use the Google Form link above"),
+        p(cls := "text-red-600 mb-4 text-center")(
+          "RSVP form not working yet, please use the Google Form link above"
+        ),
         form(id := "rsvpForm", cls := "space-y-4")(
           input(
             `type` := "text",
@@ -329,7 +354,7 @@ import scala.scalajs.js.URIUtils
           // Pre-wedding day schedule
           WeddingTimeline.day0.render,
           // Wedding day schedule
-          WeddingTimeline.day1.render,
+          WeddingTimeline.day1.render
         ),
         // Right side: Image placeholder
         div(
@@ -483,9 +508,9 @@ val ourStorySection = section(id := "our-story", cls := "py-16 bg-white")(
     // Content
     div(cls := "relative h-full flex items-center justify-center text-center")(
       div(cls := "max-w-3xl px-4")(
-        h2(cls := "text-5xl text-white mb-4 script-font")("Our Love Story"),
-        p(cls := "text-xl text-white")("The journey that brought us together"),
-        p(cls := "text-xl text-white")("10.5.2021 - 29.8.2025")
+        h2(cls := "text-5xl text-white mb-4 script-font", i18n:= OurStory.title.c)(OurStory.title.en),
+        p(cls := "text-xl text-white", i18n := OurStory.description.c)(OurStory.description.en),
+        p(cls := "text-xl text-white")(OurStory.storyTimerange)
       )
     )
   ),
@@ -494,87 +519,17 @@ val ourStorySection = section(id := "our-story", cls := "py-16 bg-white")(
   div(cls := "max-w-6xl mx-auto px-4")(
     // Timeline container
     div(cls := "space-y-16")(
-      // Timeline items
-      timelineItem(
-        "First Meet",
-        "May 2021",
-        "We met in Korea during David’s masters exchange program. Despite arriving just three months before, David knew the best cafes in Seoul for dates.",
-        "./images/first-data-cafe.jpg"
-      ),
-      timelineItem(
-        "Long Distance Relationship",
-        "January 2022",
-        "David returned to Czech to finish his masters studies at his home university, starting our long distance relationship.",
-        "./images/long-distance-rs.jpg",
-        true // Reverse layout
-      ),
-      timelineItem(
-        "Easter",
-        "April 2022",
-        "We stuck to a meet-every-three-months rule for our long distance relationship. Suhyoon visited David for Easter, working remotely Com Prague for a month.",
-        "./images/eastern-2022.jpg"
-      ),
-      timelineItem(
-        "Moving In Together",
-        "December 2022 - May 2023",
-        "Suhyoon visited Prague again, staying six months while preparing her architecture school portfolio. David graduated Com his computer science masters program in Spring.",
-        "./images/david-graduation.jpg",
-        true
-      ),
-      timelineItem(
-        "Remote",
-        "June to October 2023",
-        "David took a remote job and joins Suhyoon in Cheongdo, Korea, for her traditional building course.Afterwards, Suhyoon starts her three-year architecture studies in London. David works from both Prague and London.",
-        "./images/cheongdo-cafe.jpg"
-      ),
-      timelineItem(
-        "The Proposal",
-        "1st January 2024",
-        "David proposes during a morning walk on the beach while vacationing in Egypt. Suhyoon said yes.",
-        "./images/proposal.jpg",
-        true
-      ),
-      timelineItem(
-        "Wedding",
-        "29th August 2025",
-        "After 1.5 years of juggling work, studies, moving, wedding planning... WE’RE GETTING MARRIED!! Come celebrate with us!!",
-        "./images/dress-running.jpg"
-      )
+      (OurStory.timeline.zipWithIndex.map: (item, i) =>
+        Elements.timelineItem(
+          item.title,
+          item.date.toLocaleDateString(),
+          item.description,
+          item.imageSrc,
+          i % 2 == 0
+        ))*
     )
   )
 )
-
-def timelineItem(
-    title: String,
-    date: String,
-    description: String,
-    imageSrc: String,
-    reverse: Boolean = false
-) = {
-  div(cls := s"flex flex-col ${
-      if (reverse) "md:flex-row-reverse" else "md:flex-row"
-    } items-center gap-8")(
-    // Image container
-    div(cls := "w-full md:w-1/2")(
-      div(cls := "relative aspect-[4/3] rounded-lg overflow-hidden shadow-lg")(
-        img(
-          src := imageSrc,
-          alt := title,
-          cls := "w-full h-full object-cover",
-          onerror := "this.src='data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" viewBox=\"0 0 100 100\"%3E%3Crect width=\"100%\" height=\"100%\" fill=\"%23f3f4f6\"%3E%3C/rect%3E%3Ctext x=\"50%\" y=\"50%\" dominant-baseline=\"middle\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" fill=\"%239ca3af\"%3EImage Coming Soon%3C/text%3E%3C/svg%3E'"
-        )
-      )
-    ),
-    // Content container
-    div(cls := "w-full md:w-1/2 text-center md:text-left")(
-      div(cls := s"${if (reverse) "md:pr-8" else "md:pl-8"}")(
-        span(cls := "text-sm text-pink-600 font-semibold")(date),
-        h3(cls := "text-2xl font-semibold mt-2 mb-4")(title),
-        p(cls := "text-gray-600")(description)
-      )
-    )
-  )
-}
 
 object Elements {
   def downloadCalendar(calendar: InviteCalendar) =
@@ -597,4 +552,40 @@ object Elements {
       ),
       "Add to Calendar"
     )
+
+  def timelineItem(
+      title: I18n,
+      date: String,
+      description: I18n,
+      imageSrc: String,
+      reverse: Boolean = false
+  ) = {
+    div(cls := s"flex flex-col ${
+        if (reverse) "md:flex-row-reverse" else "md:flex-row"
+      } items-center gap-8")(
+      // Image container
+      div(cls := "w-full md:w-1/2")(
+        div(
+          cls := "relative aspect-[4/3] rounded-lg overflow-hidden shadow-lg"
+        )(
+          img(
+            src := imageSrc,
+            alt := title.en,
+            cls := "w-full h-full object-cover",
+            onerror := "this.src='data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" viewBox=\"0 0 100 100\"%3E%3Crect width=\"100%\" height=\"100%\" fill=\"%23f3f4f6\"%3E%3C/rect%3E%3Ctext x=\"50%\" y=\"50%\" dominant-baseline=\"middle\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\" fill=\"%239ca3af\"%3EImage Coming Soon%3C/text%3E%3C/svg%3E'"
+          )
+        )
+      ),
+      // Content container
+      div(cls := "w-full md:w-1/2 text-center md:text-left")(
+        div(cls := s"${if (reverse) "md:pr-8" else "md:pl-8"}")(
+          span(cls := "text-sm text-pink-600 font-semibold")(date),
+          h3(cls := "text-2xl font-semibold mt-2 mb-4", i18n := title.c)(
+            title.en
+          ),
+          p(cls := "text-gray-600", i18n := description.c)(description.en)
+        )
+      )
+    )
+  }
 }
