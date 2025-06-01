@@ -1,12 +1,7 @@
-import scala.scalajs.js.annotation.{JSExportTopLevel, JSGlobal, JSName}
 import scalatags.JsDom.all.*
-import scalatags.JsDom.svgAttrs.viewBox
-import scalatags.JsDom.{svgAttrs, svgTags}
-import scalatags.JsDom.tags2.{nav, section}
 
 import scala.scalajs.js
 import scala.scalajs.js.Date
-import scala.scalajs.js.URIUtils
 
 // Add this near the top of the file with other val definitions
 val weddingDate = new Date(2025, 7, 29, 15) // Month is 0-based, so 8 is August
@@ -199,8 +194,13 @@ case class TimelineItem(
 
 object OurStory:
   val title = I18n("Our Love Story", "Náš příběh lásky", "우리의 사랑 이야기")
-  val description = I18n("The journey that brought us together", "Cesta, která nás svedla dohromady", "우리를 하나로 만든 여정")
-  val storyTimerange = "10.5.2021 - 29.8.2025" // (new Date(2021,4,10), new Date(2025,7,29)).toString()
+  val description = I18n(
+    "The journey that brought us together",
+    "Cesta, která nás svedla dohromady",
+    "우리를 하나로 만든 여정"
+  )
+  val storyTimerange =
+    "10.5.2021 - 29.8.2025" // (new Date(2021,4,10), new Date(2025,7,29)).toString()
   val timeline = List(
     TimelineItem(
       I18n("First Meet", "První setkání", "첫 만남"),

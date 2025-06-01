@@ -6,20 +6,16 @@
 
 import org.scalajs.dom
 import org.scalajs.dom.document
-import org.scalajs.dom.html.*
-
-import scala.scalajs.js.annotation.{JSExportTopLevel, JSGlobal, JSName}
 import scalatags.JsDom.all.*
 import scalatags.JsDom.svgAttrs.viewBox
-import scalatags.JsDom.{svgAttrs, svgTags}
 import scalatags.JsDom.tags2.{nav, section}
+import scalatags.JsDom.{svgAttrs, svgTags}
 
 import scala.scalajs.js
 import scala.scalajs.js.Date
-import scala.scalajs.js.URIUtils
 
 // Scala.js
-@main def WeddingInvite(): Unit = {
+@main def WeddingInvitePage(): Unit = {
   val lang = LanguageManager.currentLang
 
   lazy val content = div(
@@ -146,7 +142,7 @@ import scala.scalajs.js.URIUtils
           )(WeddingText.ourStory.en),
           // Right button - Photobook
           a(
-            href := "./photobook.pdf",
+            href := "./images/photobook.pdf",
             cls := "px-6 py-2 border-2 border-white text-white rounded-full " +
               "backdrop-blur-sm bg-white/10 hover:bg-white/30 transition-all " +
               "font-medium text-sm uppercase tracking-wider",
@@ -391,11 +387,60 @@ import scala.scalajs.js.URIUtils
       )
     )
 
+  lazy val ourStorySection =
+    section(id := "our-story", cls := "py-16 bg-white")(
+      // Hero/Intro part
+      div(cls := "relative h-[60vh] mb-16")(
+        // Background image with overlay
+        div(
+          cls := "absolute inset-0 bg-cover bg-center",
+          style := "background-image: url('./images/our-story.jpg')"
+        ),
+        div(
+          cls := "absolute inset-0 bg-black/40"
+        ), // Overlay for better text visibility
+        // Content
+        div(
+          cls := "relative h-full flex items-center justify-center text-center"
+        )(
+          div(cls := "max-w-3xl px-4")(
+            h2(
+              cls := "text-5xl text-white mb-4 script-font",
+              i18n := OurStory.title.c
+            )(OurStory.title.en),
+            p(cls := "text-xl text-white", i18n := OurStory.description.c)(
+              OurStory.description.en
+            ),
+            p(cls := "text-xl text-white")(OurStory.storyTimerange)
+          )
+        )
+      ),
+
+      // Timeline section
+      div(cls := "max-w-6xl mx-auto px-4")(
+        // Timeline container
+        div(cls := "space-y-16")(
+          (OurStory.timeline.zipWithIndex.map: (item, i) =>
+            Elements.timelineItem(
+              item.title,
+              item.date.toLocaleDateString(),
+              item.description,
+              item.imageSrc,
+              i % 2 == 0
+            ))*
+        )
+      )
+    )
+
   lazy val footerSection = section(cls := "py-8 px-6 bg-gray-100")(
     div(cls := "max-w-6xl mx-auto text-center")(
       div(cls := "flex items-center justify-center gap-2")(
         "Powered by ",
-        a(href := "https://www.scala-lang.org/", target := "_blank", cls := "flex items-center")(
+        a(
+          href := "https://www.scala-lang.org/",
+          target := "_blank",
+          cls := "flex items-center"
+        )(
           img(
             src := "https://www.scala-lang.org/resources/img/frontpage/scala-spiral.png",
             alt := "Scala Logo",
@@ -404,7 +449,11 @@ import scala.scalajs.js.URIUtils
           "Scala"
         ),
         " & ",
-        a(href := "https://www.scala-js.org/", target := "_blank", cls := "flex items-center")(
+        a(
+          href := "https://www.scala-js.org/",
+          target := "_blank",
+          cls := "flex items-center"
+        )(
           img(
             src := "https://www.scala-js.org/assets/img/scala-js-logo.svg",
             alt := "Scala.js Logo",
@@ -460,43 +509,6 @@ import scala.scalajs.js.URIUtils
   }
 
 }
-
-val ourStorySection = section(id := "our-story", cls := "py-16 bg-white")(
-  // Hero/Intro part
-  div(cls := "relative h-[60vh] mb-16")(
-    // Background image with overlay
-    div(
-      cls := "absolute inset-0 bg-cover bg-center",
-      style := "background-image: url('./images/our-story.jpg')"
-    ),
-    div(
-      cls := "absolute inset-0 bg-black/40"
-    ), // Overlay for better text visibility
-    // Content
-    div(cls := "relative h-full flex items-center justify-center text-center")(
-      div(cls := "max-w-3xl px-4")(
-        h2(cls := "text-5xl text-white mb-4 script-font", i18n:= OurStory.title.c)(OurStory.title.en),
-        p(cls := "text-xl text-white", i18n := OurStory.description.c)(OurStory.description.en),
-        p(cls := "text-xl text-white")(OurStory.storyTimerange)
-      )
-    )
-  ),
-
-  // Timeline section
-  div(cls := "max-w-6xl mx-auto px-4")(
-    // Timeline container
-    div(cls := "space-y-16")(
-      (OurStory.timeline.zipWithIndex.map: (item, i) =>
-        Elements.timelineItem(
-          item.title,
-          item.date.toLocaleDateString(),
-          item.description,
-          item.imageSrc,
-          i % 2 == 0
-        ))*
-    )
-  )
-)
 
 object Elements {
   def downloadCalendar(calendar: InviteCalendar) =

@@ -1,6 +1,7 @@
-import scala.scalajs.js
-import scala.scalajs.js.annotation.{JSExportTopLevel, JSGlobal, JSName}
 import scalatags.JsDom.all.*
+
+import scala.scalajs.js
+import scala.scalajs.js.annotation.JSExportTopLevel
 
 val i18n = attr("data-i18n")
 

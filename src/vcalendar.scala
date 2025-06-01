@@ -1,6 +1,5 @@
 import scala.scalajs.js
-import scala.scalajs.js.Date
-import scala.scalajs.js.URIUtils
+import scala.scalajs.js.{Date, URIUtils}
 
 case class InviteCalendar(
     begin: Date,
