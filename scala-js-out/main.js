@@ -1107,31 +1107,11 @@ function $h_LLanguageManager$() {
 }
 $h_LLanguageManager$.prototype = $c_LLanguageManager$.prototype;
 $c_LLanguageManager$.prototype.setLanguage__LLanguage__V = (function(lang) {
-  var x = this.LLanguageManager$__f_currentLang;
-  if ((x === null)) {
-    var $x_1 = (lang === null);
-  } else {
-    var this$1 = $n(x);
-    var $x_1 = (this$1 === lang);
-  }
-  if ((!$x_1)) {
-    this.LLanguageManager$__f_currentLang = lang;
-    $p_LLanguageManager$__updatePageLanguage__V(this);
-  }
+  this.LLanguageManager$__f_currentLang = lang;
+  $p_LLanguageManager$__updatePageLanguage__V(this);
 });
 $c_LLanguageManager$.prototype.setLanguage__F1__V = (function(lang) {
-  var l = $as_LLanguage($n(lang).apply__O__O($m_LLanguage$()));
-  var x = this.LLanguageManager$__f_currentLang;
-  if ((x === null)) {
-    var $x_1 = (l === null);
-  } else {
-    var this$1 = $n(x);
-    var $x_1 = (this$1 === l);
-  }
-  if ((!$x_1)) {
-    this.LLanguageManager$__f_currentLang = l;
-    $p_LLanguageManager$__updatePageLanguage__V(this);
-  }
+  this.setLanguage__LLanguage__V($as_LLanguage($n(lang).apply__O__O($m_LLanguage$())));
 });
 $c_LLanguageManager$.prototype.getText__T__T = (function(key) {
   var this$1 = $n($n($m_LI18n$().LI18n$__f_dynamicItems).get__O__s_Option(key));
@@ -1323,117 +1303,81 @@ function $p_LWeddingInvitePage$package$__navBar$lzyINIT1$1__sr_LazyRef__Lscalata
   if ($n(navBar$lzy1$3).sr_LazyRef__f__initialized) {
     var $x_1 = $n(navBar$lzy1$3).sr_LazyRef__f__value;
   } else {
-    var $x_38 = $n(navBar$lzy1$3);
+    var $x_35 = $n(navBar$lzy1$3);
     var this$1 = $n($m_Lscalatags_JsDom$tags2$().nav__Lscalatags_generic_TypedTag());
     var xs = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("bg-white shadow-md sticky top-0 z-50", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]));
-    var this$20 = $n(this$1.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs));
-    var $x_37 = $m_sr_ScalaRunTime$();
-    var $x_36 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("max-w-6xl mx-auto px-4 py-3 flex justify-between items-center", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
-    var $x_35 = $m_sr_ScalaRunTime$();
-    var $x_34 = $n($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().a__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().href__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("#", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text-xl font-semibold text-pink-600 script-font", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag("David & Suhyoon"))])));
-    var $x_33 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().ul__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("flex space-x-4 text-gray-700", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
+    var this$17 = $n(this$1.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs));
+    var $x_34 = $m_sr_ScalaRunTime$();
+    var $x_33 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("max-w-6xl mx-auto px-4 py-3 flex justify-between items-center", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
     var $x_32 = $m_sr_ScalaRunTime$();
-    var $x_31 = $n($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().li__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("relative flex items-center group", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().a__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().href__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("#rsvp", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("hover:text-pink-600 font-semibold", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag("RSVP"))])))])));
-    var $x_30 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().li__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("relative flex items-center group", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
+    var $x_31 = $n($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().a__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().href__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("#", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text-xl font-semibold text-pink-600 script-font", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag("David & Suhyoon"))])));
+    var $x_30 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().ul__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("flex space-x-4 text-gray-700", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
     var $x_29 = $m_sr_ScalaRunTime$();
-    var $x_28 = $n($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().button__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().id__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("langSelect", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("bg-transparent border-none cursor-pointer hover:text-pink-600 flex items-center space-x-1 px-2 py-1", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().onclick__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("this.nextElementSibling.classList.toggle('hidden')", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]))));
-    var $x_27 = $m_sr_ScalaRunTime$();
-    var $x_26 = $n($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().span__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().id__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("selectedLang", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag("EN"))])));
+    var $x_28 = $n($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().li__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("relative flex items-center group", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().a__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().href__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("#rsvp", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("hover:text-pink-600 font-semibold", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag("RSVP"))])))])));
+    var $x_27 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().li__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("relative flex items-center group", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
+    var $x_26 = $m_sr_ScalaRunTime$();
+    var $x_25 = $n($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().button__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().id__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("langSelect", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("bg-transparent border-none cursor-pointer hover:text-pink-600 flex items-center space-x-1 px-2 py-1", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().onclick__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("this.nextElementSibling.classList.toggle('hidden')", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]))));
+    var $x_24 = $m_sr_ScalaRunTime$();
+    var $x_23 = $n($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().span__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().id__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("selectedLang", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag("EN"))])));
     var this$5 = $n($m_Lscalatags_JsDom$svgTags$().svg__Lscalatags_generic_TypedTag());
     var xs$1 = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().xmlns__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("http://www.w3.org/2000/svg", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("h-4 w-4", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$svgAttrs$().viewBox__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("0 0 20 20", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$svgAttrs$().fill__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("currentColor", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]));
     var this$7 = $n(this$5.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$1));
-    var $x_25 = $m_sr_ScalaRunTime$();
+    var $x_22 = $m_sr_ScalaRunTime$();
     var this$6 = $n($m_Lscalatags_JsDom$svgTags$().path__Lscalatags_generic_TypedTag());
     var xs$2 = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$svgAttrs$().fillRule__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("evenodd", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$svgAttrs$().d__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$svgAttrs$().clipRule__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("evenodd", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]));
-    var xs$3 = $x_25.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([this$6.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$2)]));
-    var $x_24 = $x_28.apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_27.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_26, this$7.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$3)])));
-    var $x_23 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().id__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("langSelectDropdown", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("absolute top-full right-0 mt-1 bg-white shadow-lg rounded-md hidden py-1 min-w-[80px]", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().onclick__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("event.stopPropagation()", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
-    var $x_22 = $m_sr_ScalaRunTime$();
-    var $x_21 = $as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag());
-    var $x_20 = $m_sr_ScalaRunTime$();
-    var $x_19 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("px-4 py-2 hover:bg-gray-100 cursor-pointer", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
-    var $x_18 = $m_Lscalatags_JsDom$all$().onclick__Lscalatags_generic_Attr();
-    var $x_16 = new $c_sjsr_AnonFunction0((() => {
+    var xs$3 = $x_22.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([this$6.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$2)]));
+    var $x_21 = $x_25.apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_24.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_23, this$7.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$3)])));
+    var $x_20 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().id__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("langSelectDropdown", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("absolute top-full right-0 mt-1 bg-white shadow-lg rounded-md hidden py-1 min-w-[80px]", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().onclick__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("event.stopPropagation()", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
+    var $x_19 = $m_sr_ScalaRunTime$();
+    var $x_18 = $as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag());
+    var $x_17 = $m_sr_ScalaRunTime$();
+    var $x_16 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("px-4 py-2 hover:bg-gray-100 cursor-pointer", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
+    var $x_15 = $m_Lscalatags_JsDom$all$().onclick__Lscalatags_generic_Attr();
+    var $x_14 = new $c_sjsr_AnonFunction0((() => {
       document.getElementById("selectedLang").textContent = "EN";
       document.getElementById("langSelectDropdown").classList.add("hidden");
       var this$8 = $m_LLanguageManager$();
-      $m_LLanguage$();
-      var l = $s_LLanguage$__EN__LLanguage();
-      var x = this$8.LLanguageManager$__f_currentLang;
-      if ((x === null)) {
-        var $x_17 = (l === null);
-      } else {
-        var this$9 = $n(x);
-        var $x_17 = (this$9 === l);
-      }
-      if ((!$x_17)) {
-        this$8.LLanguageManager$__f_currentLang = l;
-        $p_LLanguageManager$__updatePageLanguage__V(this$8);
-      }
+      this$8.setLanguage__LLanguage__V(($m_LLanguage$(), $s_LLanguage$__EN__LLanguage()));
     }));
     $m_Lscalatags_JsDom$all$();
     var ev = new $c_sjsr_AnonFunction1(((f) => {
       var f$1 = $as_F0(f);
       return $m_sjs_js_Any$().fromFunction0__F0__sjs_js_Function0(f$1);
     }));
-    var $x_15 = $n($n($x_21).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_20.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_19, $n($x_18).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair($x_16, new $c_Lscalatags_LowPriorityImplicits$$anon$2(ev))])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag("EN"))])));
-    var $x_14 = $as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag());
-    var $x_13 = $m_sr_ScalaRunTime$();
-    var $x_12 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("px-4 py-2 hover:bg-gray-100 cursor-pointer", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
-    var $x_11 = $m_Lscalatags_JsDom$all$().onclick__Lscalatags_generic_Attr();
-    var $x_9 = new $c_sjsr_AnonFunction0((() => {
+    var $x_13 = $n($n($x_18).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_17.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_16, $n($x_15).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair($x_14, new $c_Lscalatags_LowPriorityImplicits$$anon$2(ev))])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag("EN"))])));
+    var $x_12 = $as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag());
+    var $x_11 = $m_sr_ScalaRunTime$();
+    var $x_10 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("px-4 py-2 hover:bg-gray-100 cursor-pointer", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
+    var $x_9 = $m_Lscalatags_JsDom$all$().onclick__Lscalatags_generic_Attr();
+    var $x_8 = new $c_sjsr_AnonFunction0((() => {
       document.getElementById("selectedLang").textContent = "CS";
       document.getElementById("langSelectDropdown").classList.add("hidden");
-      var this$12 = $m_LLanguageManager$();
-      $m_LLanguage$();
-      var l$1 = $s_LLanguage$__CS__LLanguage();
-      var x$1 = this$12.LLanguageManager$__f_currentLang;
-      if ((x$1 === null)) {
-        var $x_10 = (l$1 === null);
-      } else {
-        var this$13 = $n(x$1);
-        var $x_10 = (this$13 === l$1);
-      }
-      if ((!$x_10)) {
-        this$12.LLanguageManager$__f_currentLang = l$1;
-        $p_LLanguageManager$__updatePageLanguage__V(this$12);
-      }
+      var this$11 = $m_LLanguageManager$();
+      this$11.setLanguage__LLanguage__V(($m_LLanguage$(), $s_LLanguage$__CS__LLanguage()));
     }));
     $m_Lscalatags_JsDom$all$();
     var ev$1 = new $c_sjsr_AnonFunction1(((f$2) => {
       var f$3 = $as_F0(f$2);
       return $m_sjs_js_Any$().fromFunction0__F0__sjs_js_Function0(f$3);
     }));
-    var $x_8 = $n($n($x_14).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_13.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_12, $n($x_11).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair($x_9, new $c_Lscalatags_LowPriorityImplicits$$anon$2(ev$1))])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag("CS"))])));
-    var $x_7 = $as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag());
-    var $x_6 = $m_sr_ScalaRunTime$();
-    var $x_5 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("px-4 py-2 hover:bg-gray-100 cursor-pointer", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
-    var $x_4 = $m_Lscalatags_JsDom$all$().onclick__Lscalatags_generic_Attr();
+    var $x_7 = $n($n($x_12).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_11.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_10, $n($x_9).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair($x_8, new $c_Lscalatags_LowPriorityImplicits$$anon$2(ev$1))])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag("CS"))])));
+    var $x_6 = $as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag());
+    var $x_5 = $m_sr_ScalaRunTime$();
+    var $x_4 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("px-4 py-2 hover:bg-gray-100 cursor-pointer", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
+    var $x_3 = $m_Lscalatags_JsDom$all$().onclick__Lscalatags_generic_Attr();
     var $x_2 = new $c_sjsr_AnonFunction0((() => {
       document.getElementById("selectedLang").textContent = "KR";
       document.getElementById("langSelectDropdown").classList.add("hidden");
-      var this$16 = $m_LLanguageManager$();
-      $m_LLanguage$();
-      var l$2 = $s_LLanguage$__KR__LLanguage();
-      var x$2 = this$16.LLanguageManager$__f_currentLang;
-      if ((x$2 === null)) {
-        var $x_3 = (l$2 === null);
-      } else {
-        var this$17 = $n(x$2);
-        var $x_3 = (this$17 === l$2);
-      }
-      if ((!$x_3)) {
-        this$16.LLanguageManager$__f_currentLang = l$2;
-        $p_LLanguageManager$__updatePageLanguage__V(this$16);
-      }
+      var this$14 = $m_LLanguageManager$();
+      this$14.setLanguage__LLanguage__V(($m_LLanguage$(), $s_LLanguage$__KR__LLanguage()));
     }));
     $m_Lscalatags_JsDom$all$();
     var ev$2 = new $c_sjsr_AnonFunction1(((f$3$1) => {
       var f$4 = $as_F0(f$3$1);
       return $m_sjs_js_Any$().fromFunction0__F0__sjs_js_Function0(f$4);
     }));
-    var xs$4 = $x_37.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($x_36).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_35.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_34, $n($x_33).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_32.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_31, $n($x_30).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_29.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_24, $n($x_23).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_22.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_15, $x_8, $n($n($x_7).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_6.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_5, $n($x_4).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair($x_2, new $c_Lscalatags_LowPriorityImplicits$$anon$2(ev$2))])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag("KR"))])))])))])))])))])))]));
-    var $x_1 = $x_38.initialize__O__O(this$20.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$4));
+    var xs$4 = $x_34.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($x_33).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_32.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_31, $n($x_30).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_29.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_28, $n($x_27).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_26.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_21, $n($x_20).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_19.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_13, $x_7, $n($n($x_6).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_5.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_4, $n($x_3).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair($x_2, new $c_Lscalatags_LowPriorityImplicits$$anon$2(ev$2))])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag("KR"))])))])))])))])))])))]));
+    var $x_1 = $x_35.initialize__O__O(this$17.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$4));
   }
   return $as_Lscalatags_generic_TypedTag($x_1);
 }
@@ -1839,7 +1783,7 @@ function $p_LWeddingInvitePage$package$__footerSection$lzyINIT1$1__sr_LazyRef__L
     var this$1 = $n($m_Lscalatags_JsDom$tags2$().section__Lscalatags_generic_TypedTag());
     var xs = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("py-8 px-6 bg-gray-100", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]));
     var this$6 = $n(this$1.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs));
-    var xs$1 = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("max-w-6xl mx-auto text-center", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("flex items-center justify-center gap-2", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag("Powered by ")), $n($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().a__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().href__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("https://www.scala-lang.org/", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().target__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("_blank", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("flex items-center", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().img__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().src__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("https://www.scala-lang.org/resources/img/frontpage/scala-spiral.png", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().alt__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("Scala Logo", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("h-10 w-6 mr-2", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]))), ($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag("Scala"))]))), ($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag(" & ")), $n($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().a__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().href__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("https://www.scala-js.org/", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().target__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("_blank", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("flex items-center", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().img__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().src__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("https://www.scala-js.org/assets/img/scala-js-logo.svg", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().alt__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("Scala.js Logo", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("h-10 mr-2", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]))), ($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag("Scala.js"))])))])))])))]));
+    var xs$1 = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("max-w-6xl mx-auto text-center", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("flex items-center justify-center gap-2 text-sm text-gray-500", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag("Powered by ")), $n($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().a__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().href__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("https://www.scala-lang.org/", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().target__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("_blank", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("flex items-center", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().img__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().src__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("https://www.scala-lang.org/resources/img/frontpage/scala-spiral.png", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().alt__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("Scala Logo", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("h-6 mr-2", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]))), ($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag("Scala"))]))), ($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag(" & ")), $n($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().a__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().href__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("https://www.scala-js.org/", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().target__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("_blank", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("flex items-center", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])))).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().img__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().src__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("https://www.scala-js.org/assets/img/scala-js-logo.svg", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().alt__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("Scala.js Logo", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("h-6 mr-2", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]))), ($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag("Scala.js"))])))])))])))]));
     var $x_1 = $x_2.initialize__O__O(this$6.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$1));
   }
   return $as_Lscalatags_generic_TypedTag($x_1);
@@ -4063,18 +4007,11 @@ $c_Llanguages$package$.prototype.detectedRegion__LLanguage = (function() {
     while ($n(it).hasNext__Z()) {
       var a = $n(it).next__O();
       var x$1 = $as_T2(a);
-      matchResult9: {
-        var $x_5;
-        if ((x$1 !== null)) {
-          var prefix = $as_T($n(x$1).T2__f__1);
-          var this$12 = $n(browserLang);
-          $n(prefix);
-          var $x_5 = $uZ(this$12.startsWith(prefix));
-          break matchResult9;
-        }
-        throw new $c_s_MatchError(x$1);
-      }
-      if ($x_5) {
+      var prefix = $as_T($n(x$1).T2__f__1);
+      $as_LLanguage($n(x$1).T2__f__2);
+      var this$12 = $n(browserLang);
+      $n(prefix);
+      if ($uZ(this$12.startsWith(prefix))) {
         var this$14 = new $c_s_Some(a);
         break _return;
       }
@@ -4085,8 +4022,8 @@ $c_Llanguages$package$.prototype.detectedRegion__LLanguage = (function() {
     var this$15 = $m_s_None$();
   } else {
     var arg1 = this$14.get__O();
-    var _$2 = $as_T2(arg1);
-    var this$15 = new $c_s_Some($as_LLanguage($n(_$2).T2__f__2));
+    var _$3 = $as_T2(arg1);
+    var this$15 = new $c_s_Some($as_LLanguage($n(_$3).T2__f__2));
   }
   return $as_LLanguage((this$15.isEmpty__Z() ? $s_LLanguage$__EN__LLanguage() : this$15.get__O()));
 });
