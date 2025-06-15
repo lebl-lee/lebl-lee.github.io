@@ -123,7 +123,7 @@ import scala.scalajs.js.Date
   )(
     // Card container
     div(
-      cls := "max-w-[1200px] w-full bg-white rounded-2xl shadow-lg overflow-hidden"
+      cls := "max-w-[1000px] w-full bg-white rounded-2xl shadow-lg overflow-hidden"
     )(
       // Image and content container
       div(
