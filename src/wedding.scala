@@ -96,7 +96,7 @@ object WeddingTimeline {
           "Guest seated by 14:45 in upstairs pavillion",
           "15:30 Bestie BLESSINGs",
           "15:45 Round of Ribbons",
-          "16:00 Group PHOTOSHOOT"
+          "16:00 PHOTOSHOOT"
         )
       ),
       Event(
@@ -119,8 +119,6 @@ object WeddingTimeline {
         I18n("After Party", "After Party", "애프터 파티"),
         List(
           "Dancing and celebrations",
-          "20:00 Sister Act",
-          "20:30 Speed Luiz",
           "21:00 Surprise Performance by Bride & Groom"
         )
       ),
@@ -141,12 +139,12 @@ object WeddingText {
   val gettingMaried = I18n(
     "Are Getting Married!",
     "Se Berou!",
-    "결혼합니다!"
+    "저희 결혼합니다!"
   )
   val countdownTitle = I18n(
     "Counting down to our special day",
     "Odpočítávání do našeho velkého dne",
-    "우리의 특별한 날까지 남은 시간"
+    "결혼식까지 남은 시간"
   )
   val rsvp = I18n(
     "Kindly RSVP",
@@ -169,7 +167,7 @@ object WeddingText {
   val scheduleDay0 = I18n(
     "Pre-Wedding",
     "Den před svatbou",
-    "웨딩 전날"
+    "결혼식 전날"
   )
   val scheduleDay1 = I18n(
     "Wedding Day",
@@ -208,7 +206,7 @@ object OurStory:
       I18n(
         "We met in Korea during David's masters exchange program. Despite arriving just three months before, David knew the best cafes in Seoul for dates.",
         "Potkali jsme se v Koreji během Davidova magistra na výměnném pobytu. I přesto, že přijel jen před třemi měsíci, znal David ty nejlepší kavárny v Soulu na rande.",
-        "우리는 다빗이 한국에서 석사 교환 과정 중 만났어요. 한국에 도착한 지 3개월 밖에 되지 않았지만 커피덕후 다빗은 데이트하기 좋은 서울 카페들을 다 꿰고 있었죠."
+        "다빗이 한국에서 석사 교환 과정 중 만났어요. 한국에 온지 3개월 밖에 되지 않았지만 커피덕후 다빗은 데이트하기 좋은 서울 카페들을 다 꿰고 있었죠."
       ),
       "./images/first-data-cafe.jpg"
     ),
@@ -218,7 +216,7 @@ object OurStory:
       I18n(
         "David returned to Czech to finish his masters studies at his home university, starting our long distance relationship.",
         "David se vrátil do Česka dokončit magisterské studium na své domovské univerzitě, čímž začal náš vztah na dálku.",
-        "다빗이 본교에서 석사 과정을 마치기 위해 체코로 돌아가면서 우리의 장거리 연애가 시작되었습니다."
+        "본교에서 석사 과정을 마치기 위해 다빗은 체코로 돌아갔고 우리의 장거리 연애가 시작되었습니다."
       ),
       "./images/long-distance-rs.jpg"
     ),
@@ -228,7 +226,7 @@ object OurStory:
       I18n(
         "We stuck to a meet-every-three-months rule for our long distance relationship. Suhyoon visited David for Easter, working remotely Com Prague for a month.",
         "Drželi jsme se pravidla vidět se každé tři měsíce během našeho vztahu na dálku. Suhyoon navštívila Davida na Velikonoce a měsíc pracovala vzdáleně z Prahy.",
-        "우리는 3개월에 한 번씩은 만나는 장거리 연애 규칙을 지켰어요. 서윤은 부활절에 다빗을 방문해 한 달 동안 프라하에서 원격 근무를 했죠."
+        "우리는 3개월에 한 번은 만나는 장거리 연애 규칙을 지켰어요. 서윤은 부활절에 다빗을 방문해 한 달 동안 프라하에서 원격 근무를 했죠."
       ),
       "./images/eastern-2022.jpg"
     ),
@@ -248,7 +246,7 @@ object OurStory:
       I18n(
         "David took a remote job and joins Suhyoon in Cheongdo, Korea, for her traditional building course.Afterwards, Suhyoon starts her three-year architecture studies in London. David works from both Prague and London.",
         "David si našel práci na dálku a připojil se k Suhyoon v Cheongdo v Koreji během jejího kurzu tradičního stavitelství. Poté Suhyoon začala tříleté studium architektury v Londýně. David pracuje z Prahy i Londýna.",
-        "서윤이 청도에서 전통한옥목수 과정을 이수하는 동안 다빗도 원격 근무를 하며 서윤 옆을 지켜줬어요. 그 후 서윤이 런던에서 3년간의 건축 공부를 시작했고, 다빗은 현재 프라하와 런던을 오가며 일하고 있습니다."
+        "청도에서 서윤이 전통한옥목수 과정을 이수하는 동안 다빗도 원격 근무를 하며 서윤 옆에 있어줬어요. 그 후 서윤은 런던에서 3년간의 건축 공부를 시작했고, 다빗은 현재 프라하와 런던을 오가며 일하고 있습니다."
       ),
       "./images/cheongdo-cafe.jpg"
     ),
@@ -258,7 +256,7 @@ object OurStory:
       I18n(
         "David proposes during a morning walk on the beach while vacationing in Egypt. Suhyoon said yes.",
         "David požádal Suhyoon o ruku během ranní procházky po pláži na dovolené v Egyptě. Suhyoon řekla ano.",
-        "연말휴가로 놀러온 이집트 리조트에서 아침 해변 산책 중 다빗이 깜짝 프로포즈를 했어요."
+        "연말휴가로 놀러온 이집트에서 아침 해변 산책 중 다빗이 깜짝 프로포즈를 했어요."
       ),
       "./images/proposal.jpg"
     ),
@@ -268,7 +266,7 @@ object OurStory:
       I18n(
         "After 4 years of juggling work, studies, moving, wedding planning... WE'RE GETTING MARRIED!! Come celebrate with us!!",
         "Po roce a půl žonglování mezi prací, studiem, stěhováním a plánováním svatby... BEREME SE!! Přijďte to s námi oslavit!!",
-        "4년 동안 엸미히 연애, 일 공부, 이사, 결혼 준비를 병행한 저희가 드디어 결혼합니다!! 함께 축하해 주세요!!"
+        "4년 동안 열심히 연애, 일, 공부, 이사, 결혼 준비를 하고 드디어 결혼합니다! 함께 축하해 주세요!"
       ),
       "./images/dress-running.jpg"
     )
