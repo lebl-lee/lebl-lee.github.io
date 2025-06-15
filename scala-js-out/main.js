@@ -1114,7 +1114,7 @@ function $c_LGifts$FamilyMembers$() {
   this.LGifts$FamilyMembers$__f_description = null;
   this.LGifts$FamilyMembers$__f_instructions = null;
   $n_LGifts$FamilyMembers$ = this;
-  this.LGifts$FamilyMembers$__f_title = $m_LI18n$().apply__T__T__T__LI18n("For bride's side", "", "");
+  this.LGifts$FamilyMembers$__f_title = $m_LI18n$().apply__T__T__T__LI18n("For bride's side", "Pro stranu nev\u011bsty", "\uc2e0\ubd80\uce21");
   var this$1 = $m_LI18n$();
   this.LGifts$FamilyMembers$__f_description = this$1.apply__T__T__T__LI18n("\ub9c8\uc74c \uc804\ud558\uc2e4 \uacf3", "\ub9c8\uc74c \uc804\ud558\uc2e4 \uacf3", "\ub9c8\uc74c \uc804\ud558\uc2e4 \uacf3");
   var this$2 = $m_LI18n$();

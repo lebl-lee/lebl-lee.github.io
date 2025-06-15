@@ -291,7 +291,7 @@ object Gifts:
   )
 
   object FamilyMembers:
-    val title = I18n("For bride's side", "", "")
+    val title = I18n("For bride's side", "Pro stranu nevěsty", "신부측")
     val description = I18n.single("마음 전하실 곳")
     val instructions = List(
       I18n.single(s"국민 817-21-0154-152 (이병호)"),
