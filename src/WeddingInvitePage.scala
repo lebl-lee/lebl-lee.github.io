@@ -195,6 +195,7 @@ import scala.scalajs.js.Date
     )
   )
 
+  
   lazy val inviteText = section(cls := "bg-white text-center py-8 px-4")(
     p(cls := "text-lg max-w-2xl mx-auto mb-8", Wedding.inviteText.i18nAttr)(
       "We invite you to celebrate our wedding day with us on ",
@@ -351,6 +352,20 @@ import scala.scalajs.js.Date
               "Venue Capacity: ",
               span(cls := "font-semibold")(s"${Rsvp.capacity} guests")
             )
+          )
+        ),
+        // International Guests Tips
+        div(cls := "mt-6 p-4 bg-pink-50 rounded-lg")(
+          div(cls := "text-center")(
+            h3(cls := "text-lg font-semibold mb-2")("Coming from Abroad?"),
+            p(cls := "text-gray-600 mb-4")(
+              "We've prepared a guide with our favorite spots, local tips, and recommendations to help you make the most of your stay in Prague."
+            ),
+            a(
+              href := "./recommendations.pdf",
+              target := "_blank",
+              cls := "inline-flex items-center px-4 py-2 bg-white border-2 border-pink-600 text-pink-600 rounded-lg hover:bg-pink-50 transition-colors"
+            )("Prague Tips & Recommendations")
           )
         )
       )
