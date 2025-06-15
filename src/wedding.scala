@@ -34,6 +34,11 @@ object Wedding {
   )
 }
 
+object Rsvp:
+  val capacity = 40
+  val confirmed = 28
+  val confirmedRateInt = (1.0/capacity*confirmed)*100.toInt
+
 object WeddingTimeline {
   case class Day(name: I18n, date: Date, events: List[Event]) {
     def render = div(

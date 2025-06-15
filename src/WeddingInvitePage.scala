@@ -284,46 +284,46 @@ import scala.scalajs.js.Date
             "Fill out Google RSVP Form (en)"
           )
         ),
-        div(cls := "my-4 flex justify-center items-center gap-4")(
-          div(cls := "flex-grow border-t border-gray-300"),
-          p(cls := "text-gray-500 px-4")("or"),
-          div(cls := "flex-grow border-t border-gray-300")
-        ),
-        p(cls := "text-red-600 mb-4 text-center")(
-          "RSVP form not working yet, please use the Google Form link above"
-        ),
-        form(id := "rsvpForm", cls := "space-y-4")(
-          input(
-            `type` := "text",
-            placeholder := "Your Full Name",
-            required := true,
-            cls := "w-full border border-gray-300 p-3 rounded",
-            disabled := true
-          ),
-          input(
-            `type` := "email",
-            placeholder := "Email Address",
-            required := true,
-            cls := "w-full border border-gray-300 p-3 rounded"
-          ),
-          select(
-            required := true,
-            cls := "w-full border border-gray-300 p-3 rounded"
-          )(
-            option(value := "")("Will you attend?"),
-            option(value := "yes")("Yes, can't wait!"),
-            option(value := "no")("Sorry, can't make it")
-          ),
-          button(
-            `type` := "submit",
-            disabled := true,
-            cls := "bg-gray-400 cursor-not-allowed text-white px-6 py-2 rounded w-full"
-          )("Submit RSVP (Not Working)"),
-          p(
-            id := "rsvpMessage",
-            cls := "text-green-600 text-center mt-4 hidden"
-          )("Thank you for your RSVP!")
-        ),
+//        div(cls := "my-4 flex justify-center items-center gap-4")(
+//          div(cls := "flex-grow border-t border-gray-300"),
+//          p(cls := "text-gray-500 px-4")("or"),
+//          div(cls := "flex-grow border-t border-gray-300")
+//        ),
+//        p(cls := "text-red-600 mb-4 text-center")(
+//          "RSVP form not working yet, please use the Google Form link above"
+//        ),
+//        form(id := "rsvpForm", cls := "space-y-4")(
+//          input(
+//            `type` := "text",
+//            placeholder := "Your Full Name",
+//            required := true,
+//            cls := "w-full border border-gray-300 p-3 rounded",
+//            disabled := true
+//          ),
+//          input(
+//            `type` := "email",
+//            placeholder := "Email Address",
+//            required := true,
+//            cls := "w-full border border-gray-300 p-3 rounded"
+//          ),
+//          select(
+//            required := true,
+//            cls := "w-full border border-gray-300 p-3 rounded"
+//          )(
+//            option(value := "")("Will you attend?"),
+//            option(value := "yes")("Yes, can't wait!"),
+//            option(value := "no")("Sorry, can't make it")
+//          ),
+//          button(
+//            `type` := "submit",
+//            disabled := true,
+//            cls := "bg-gray-400 cursor-not-allowed text-white px-6 py-2 rounded w-full"
+//          )("Submit RSVP (Not Working)"),
+//          p(
+//            id := "rsvpMessage",
+//            cls := "text-green-600 text-center mt-4 hidden"
+//          )("Thank you for your RSVP!")
+//        ),
         // Guest List Stats
         div(cls := "mt-6 p-4 bg-gray-50 rounded-lg")(
           div(cls := "text-center space-y-4")(
@@ -331,25 +331,25 @@ import scala.scalajs.js.Date
               span(
                 id := "confirmedCount",
                 cls := "text-3xl font-bold text-pink-600"
-              )("20"),
+              )(Rsvp.confirmed.toString),
               p(cls := "text-gray-600 text-sm")("Confirmed Guests")
             ),
             div(cls := "mt-4")(
               div(cls := "text-sm text-gray-600 mb-2 flex justify-between")(
                 span("Response Rate"),
-                span(id := "responseRate")("50%")
+                span(id := "responseRate")(s"${Rsvp.confirmedRateInt}%")
               ),
               div(cls := "w-full bg-gray-200 rounded-full h-2")(
                 div(
                   id := "responseRateBar",
                   cls := "bg-pink-600 rounded-full h-2 transition-all duration-500",
-                  style := "width: 50%"
+                  style := s"width: ${Rsvp.confirmedRateInt}%"
                 )
               )
             ),
             p(cls := "text-sm text-gray-600")(
               "Venue Capacity: ",
-              span(cls := "font-semibold")("40 guests")
+              span(cls := "font-semibold")(s"${Rsvp.capacity} guests")
             )
           )
         )
