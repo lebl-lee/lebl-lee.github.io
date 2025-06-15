@@ -1992,7 +1992,7 @@ function $p_LWeddingInvitePage$package$__giftSection$lzyINIT1$1__sr_LazyRef__Lsc
       var i$1 = $as_LI18n(i);
       var $x_25 = $as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().li__Lscalatags_generic_TypedTag());
       var $x_24 = $m_sr_ScalaRunTime$();
-      var $x_23 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("flex", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
+      var $x_23 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("flex justify-center", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
       var $x_22 = $m_Llanguages$package$().Llanguages$package$__f_i18n;
       var this$30 = $n(i$1);
       var this$32 = $m_s_util_hashing_MurmurHash3$();
