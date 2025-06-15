@@ -473,7 +473,7 @@ import scala.scalajs.js.Date
 
   lazy val footerSection = section(cls := "py-8 px-6 bg-gray-100")(
     div(cls := "max-w-6xl mx-auto text-center")(
-      div(cls := "flex items-center justify-center gap-2 text-sm text-gray-500")(
+      div(cls := "flex items-center justify-center gap-2 text-xs text-gray-500")(
         "Powered by ",
         a(
           href := "https://www.scala-lang.org/",
@@ -483,22 +483,9 @@ import scala.scalajs.js.Date
           img(
             src := "https://www.scala-lang.org/resources/img/frontpage/scala-spiral.png",
             alt := "Scala Logo",
-            cls := "h-6 mr-2"
+            cls := "h-4 mr-1"
           ),
           "Scala"
-        ),
-        " & ",
-        a(
-          href := "https://www.scala-js.org/",
-          target := "_blank",
-          cls := "flex items-center"
-        )(
-          img(
-            src := "https://www.scala-js.org/assets/img/scala-js-logo.svg",
-            alt := "Scala.js Logo",
-            cls := "h-6 mr-2"
-          ),
-          "Scala.js"
         )
       )
     )
