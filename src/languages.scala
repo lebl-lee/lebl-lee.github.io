@@ -11,12 +11,12 @@ case class I18n(en: String, cs: String, kr: String):
 
 
 object I18n:
-  var dynamicItems = Map[String, I18n]()
-  // never in production
-  def apply(en: String, cs: String, kr: String) =
+  var dynamicItems: Map[String, I18n] = Map() // ouch
+  def apply(en: String, cs: String, kr: String): I18n =
     val res = new I18n(en, cs, kr)
     dynamicItems = dynamicItems + (res.c -> res)
     res
+  def single(en: String): I18n = apply(en, en ,en)
 
 enum Language:
   case CS, KR, EN

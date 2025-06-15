@@ -271,3 +271,52 @@ object OurStory:
       "./images/dress-running.jpg"
     )
   )
+end OurStory
+
+object Gifts:
+  val title = I18n(
+    "Wedding Gifts",
+    "Svatební dary",
+    "웨딩 선물"
+  )
+  val description = I18n(
+    "We are truly blessed to have you share in our special day. Your presence and warm wishes mean the world to us.",
+    "Jsme skutečně požehnáni, že s námi sdílíte náš speciální den. Vaše přítomnost a vřelá přání pro nás znamenají svět.",
+    "저희의 특별한 날을 함께 해주셔서 감사합니다. 여러분의 참석과 따뜻한 마음이 저희에게 큰 의미가 됩니다."
+  )
+
+  object FamilyMembers:
+    val title = I18n("For Family Members", "Pro členy rodiny", "가족분들께")
+    val description = I18n(
+      "For family members who want to send gifts to the bride's side:",
+      "Pro rodinné příslušníky, kteří chtějí poslat dary rodině nevěsty:",
+      "신부측에 마음 전하시고 싶은 분:"
+    )
+    val account = "이병호 (국민 817-21-0154-152)"
+    val instructions = List(
+      I18n(
+        s"Make a bank transfer: $account",
+        s"Bankovní převod",
+        s"계좌이체: $account"
+      ),
+      I18n(
+        "Use the gift box available at the wedding venue",
+        "Použít dárkovou krabici dostupnou na svatebním místě",
+        "결혼식장에 마련된 선물함을 이용해주세요"
+      )
+    )
+
+  object Friends:
+    val title = I18n(
+      "For Our Friends",
+      "Pro naše přátele",
+      "친구분들께"
+    )
+    val descriptions = I18n(
+      "Your friendship and presence at our wedding is truly the greatest gift we could ask for. We request no presents - just your company to share in our joy and celebration.",
+      "Vaše přátelství a přítomnost na naší svatbě je skutečně největším darem, o který bychom mohli požádat. Nežádáme žádné dary - jen vaši společnost ke sdílení naší radosti a oslav.",
+      "여러분의 우정과 참석이 저희에게 가장 큰 선물입니다. 따로 선물은 준비하지 마시고 저희의 기쁨을 함께 나누어 주세요."
+    )
+
+end Gifts
+

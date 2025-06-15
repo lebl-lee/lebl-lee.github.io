@@ -26,6 +26,7 @@ import scala.scalajs.js.Date
     inviteText,
     scheduleSection,
     ourStorySection,
+    giftSection,
     footerSection
   )
   document.head.appendChild(tailwindCss.render)
@@ -432,6 +433,43 @@ import scala.scalajs.js.Date
         )
       )
     )
+
+  lazy val giftSection = section(cls := "py-12 px-6 bg-gray-50")(
+    div(cls := "max-w-4xl mx-auto text-center")(
+      h2(cls := "text-3xl font-semibold mb-8 script-font text-pink-600", i18n := Gifts.title.c)(Gifts.title.en),
+      p(cls := "text-lg mb-6", i18n := Gifts.description.c)(Gifts.description.en),
+      div(cls := "grid md:grid-cols-2 gap-8 mt-8")(
+        // Family Members Card
+        div(cls := "bg-white p-6 rounded-lg shadow-sm")(
+          h3(cls := "text-xl font-semibold mb-4", i18n := Gifts.FamilyMembers.title.c)(Gifts.FamilyMembers.title.en),
+          p(cls := "text-gray-600 mb-4", i18n := Gifts.FamilyMembers.description.c)(Gifts.FamilyMembers.description.en),
+          ul(cls := "text-left text-gray-600 mb-4 space-y-2 list-disc")(
+            Gifts.FamilyMembers.instructions.map: i =>
+              li(cls := "ml-6", i18n := i.c)(i.en)
+          )
+        ),
+        // Friends Card
+        div(cls := "bg-white p-6 rounded-lg shadow-sm")(
+          h3(cls := "text-xl font-semibold mb-4", i18n := Gifts.Friends.title.c)(Gifts.Friends.title.en),
+          p(cls := "text-gray-600", i18n := Gifts.Friends.descriptions.c)(Gifts.Friends.descriptions.en),
+          div(cls := "flex justify-center mt-4")(
+            svgTags.svg(
+              xmlns := "http://www.w3.org/2000/svg",
+              cls := "h-6 w-6 text-pink-600",
+              viewBox := "0 0 20 20",
+              svgAttrs.fill := "currentColor"
+            )(
+              svgTags.path(
+                svgAttrs.fillRule := "evenodd",
+                svgAttrs.d := "M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z",
+                svgAttrs.clipRule := "evenodd"
+              )
+            )
+          )
+        )
+      )
+    )
+  )
 
   lazy val footerSection = section(cls := "py-8 px-6 bg-gray-100")(
     div(cls := "max-w-6xl mx-auto text-center")(

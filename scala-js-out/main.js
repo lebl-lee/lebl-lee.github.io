@@ -1084,6 +1084,82 @@ function $m_LElements$() {
   }
   return $n_LElements$;
 }
+/** @constructor */
+function $c_LGifts$() {
+  this.LGifts$__f_title = null;
+  this.LGifts$__f_description = null;
+  $n_LGifts$ = this;
+  this.LGifts$__f_title = $m_LI18n$().apply__T__T__T__LI18n("Wedding Gifts", "Svatebn\u00ed dary", "\uc6e8\ub529 \uc120\ubb3c");
+  this.LGifts$__f_description = $m_LI18n$().apply__T__T__T__LI18n("We are truly blessed to have you share in our special day. Your presence and warm wishes mean the world to us.", "Jsme skute\u010dn\u011b po\u017eehn\u00e1ni, \u017ee s n\u00e1mi sd\u00edl\u00edte n\u00e1\u0161 speci\u00e1ln\u00ed den. Va\u0161e p\u0159\u00edtomnost a v\u0159el\u00e1 p\u0159\u00e1n\u00ed pro n\u00e1s znamenaj\u00ed sv\u011bt.", "\uc800\ud76c\uc758 \ud2b9\ubcc4\ud55c \ub0a0\uc744 \ud568\uaed8 \ud574\uc8fc\uc154\uc11c \uac10\uc0ac\ud569\ub2c8\ub2e4. \uc5ec\ub7ec\ubd84\uc758 \ucc38\uc11d\uacfc \ub530\ub73b\ud55c \ub9c8\uc74c\uc774 \uc800\ud76c\uc5d0\uac8c \ud070 \uc758\ubbf8\uac00 \ub429\ub2c8\ub2e4.");
+}
+$c_LGifts$.prototype = new $h_O();
+$c_LGifts$.prototype.constructor = $c_LGifts$;
+/** @constructor */
+function $h_LGifts$() {
+}
+$h_LGifts$.prototype = $c_LGifts$.prototype;
+var $d_LGifts$ = new $TypeData().initClass($c_LGifts$, "Gifts$", ({
+  LGifts$: 1
+}));
+var $n_LGifts$;
+function $m_LGifts$() {
+  if ((!$n_LGifts$)) {
+    $n_LGifts$ = new $c_LGifts$();
+  }
+  return $n_LGifts$;
+}
+/** @constructor */
+function $c_LGifts$FamilyMembers$() {
+  this.LGifts$FamilyMembers$__f_title = null;
+  this.LGifts$FamilyMembers$__f_description = null;
+  this.LGifts$FamilyMembers$__f_account = null;
+  this.LGifts$FamilyMembers$__f_instructions = null;
+  $n_LGifts$FamilyMembers$ = this;
+  this.LGifts$FamilyMembers$__f_title = $m_LI18n$().apply__T__T__T__LI18n("For Family Members", "Pro \u010dleny rodiny", "\uac00\uc871\ubd84\ub4e4\uaed8");
+  this.LGifts$FamilyMembers$__f_description = $m_LI18n$().apply__T__T__T__LI18n("For family members who want to send gifts to the bride's side:", "Pro rodinn\u00e9 p\u0159\u00edslu\u0161n\u00edky, kte\u0159\u00ed cht\u011bj\u00ed poslat dary rodin\u011b nev\u011bsty:", "\uc2e0\ubd80\uce21\uc5d0 \ub9c8\uc74c \uc804\ud558\uc2dc\uace0 \uc2f6\uc740 \ubd84:");
+  this.LGifts$FamilyMembers$__f_account = "\uc774\ubcd1\ud638 (\uad6d\ubbfc 817-21-0154-152)";
+  this.LGifts$FamilyMembers$__f_instructions = new $c_sci_$colon$colon($m_LI18n$().apply__T__T__T__LI18n(("Make a bank transfer: " + this.LGifts$FamilyMembers$__f_account), "Bankovn\u00ed p\u0159evod", ("\uacc4\uc88c\uc774\uccb4: " + this.LGifts$FamilyMembers$__f_account)), new $c_sci_$colon$colon($m_LI18n$().apply__T__T__T__LI18n("Use the gift box available at the wedding venue", "Pou\u017e\u00edt d\u00e1rkovou krabici dostupnou na svatebn\u00edm m\u00edst\u011b", "\uacb0\ud63c\uc2dd\uc7a5\uc5d0 \ub9c8\ub828\ub41c \uc120\ubb3c\ud568\uc744 \uc774\uc6a9\ud574\uc8fc\uc138\uc694"), $m_sci_Nil$()));
+}
+$c_LGifts$FamilyMembers$.prototype = new $h_O();
+$c_LGifts$FamilyMembers$.prototype.constructor = $c_LGifts$FamilyMembers$;
+/** @constructor */
+function $h_LGifts$FamilyMembers$() {
+}
+$h_LGifts$FamilyMembers$.prototype = $c_LGifts$FamilyMembers$.prototype;
+var $d_LGifts$FamilyMembers$ = new $TypeData().initClass($c_LGifts$FamilyMembers$, "Gifts$FamilyMembers$", ({
+  LGifts$FamilyMembers$: 1
+}));
+var $n_LGifts$FamilyMembers$;
+function $m_LGifts$FamilyMembers$() {
+  if ((!$n_LGifts$FamilyMembers$)) {
+    $n_LGifts$FamilyMembers$ = new $c_LGifts$FamilyMembers$();
+  }
+  return $n_LGifts$FamilyMembers$;
+}
+/** @constructor */
+function $c_LGifts$Friends$() {
+  this.LGifts$Friends$__f_title = null;
+  this.LGifts$Friends$__f_descriptions = null;
+  $n_LGifts$Friends$ = this;
+  this.LGifts$Friends$__f_title = $m_LI18n$().apply__T__T__T__LI18n("For Our Friends", "Pro na\u0161e p\u0159\u00e1tele", "\uce5c\uad6c\ubd84\ub4e4\uaed8");
+  this.LGifts$Friends$__f_descriptions = $m_LI18n$().apply__T__T__T__LI18n("Your friendship and presence at our wedding is truly the greatest gift we could ask for. We request no presents - just your company to share in our joy and celebration.", "Va\u0161e p\u0159\u00e1telstv\u00ed a p\u0159\u00edtomnost na na\u0161\u00ed svatb\u011b je skute\u010dn\u011b nejv\u011bt\u0161\u00edm darem, o kter\u00fd bychom mohli po\u017e\u00e1dat. Ne\u017e\u00e1d\u00e1me \u017e\u00e1dn\u00e9 dary - jen va\u0161i spole\u010dnost ke sd\u00edlen\u00ed na\u0161\u00ed radosti a oslav.", "\uc5ec\ub7ec\ubd84\uc758 \uc6b0\uc815\uacfc \ucc38\uc11d\uc774 \uc800\ud76c\uc5d0\uac8c \uac00\uc7a5 \ud070 \uc120\ubb3c\uc785\ub2c8\ub2e4. \ub530\ub85c \uc120\ubb3c\uc740 \uc900\ube44\ud558\uc9c0 \ub9c8\uc2dc\uace0 \uc800\ud76c\uc758 \uae30\uc068\uc744 \ud568\uaed8 \ub098\ub204\uc5b4 \uc8fc\uc138\uc694.");
+}
+$c_LGifts$Friends$.prototype = new $h_O();
+$c_LGifts$Friends$.prototype.constructor = $c_LGifts$Friends$;
+/** @constructor */
+function $h_LGifts$Friends$() {
+}
+$h_LGifts$Friends$.prototype = $c_LGifts$Friends$.prototype;
+var $d_LGifts$Friends$ = new $TypeData().initClass($c_LGifts$Friends$, "Gifts$Friends$", ({
+  LGifts$Friends$: 1
+}));
+var $n_LGifts$Friends$;
+function $m_LGifts$Friends$() {
+  if ((!$n_LGifts$Friends$)) {
+    $n_LGifts$Friends$ = new $c_LGifts$Friends$();
+  }
+  return $n_LGifts$Friends$;
+}
 function $p_LLanguageManager$__updatePageLanguage__V($thiz) {
   var domList = document.querySelectorAll("[data-i18n]");
   var this$2 = new $c_Lorg_scalajs_dom_DOMList$DOMListSeq(domList);
@@ -1190,15 +1266,15 @@ function $c_LOurStory$() {
   this.LOurStory$__f_storyTimerange = "10.5.2021 - 29.8.2025";
   var title = $m_LI18n$().apply__T__T__T__LI18n("First Meet", "Prvn\u00ed setk\u00e1n\u00ed", "\uccab \ub9cc\ub0a8");
   var date = new Date(2021, 4);
-  var description = $m_LI18n$().apply__T__T__T__LI18n("We met in Korea during David's masters exchange program. Despite arriving just three months before, David knew the best cafes in Seoul for dates.", "Potkali jsme se v Koreji b\u011bhem Davidova magistra na v\u00fdm\u011bnn\u00e9m pobytu. I p\u0159esto, \u017ee p\u0159ijel jen p\u0159ed t\u0159emi m\u011bs\u00edci, znal David ty nejlep\u0161\u00ed kav\u00e1rny v Soulu na rande.", "\uc6b0\ub9ac\ub294 \ub2e4\ube57\uc774 \ud55c\uad6d\uc5d0\uc11c \uc11d\uc0ac \uad50\ud658 \uacfc\uc815 \uc911 \ub9cc\ub0ac\uc5b4\uc694. \ud55c\uad6d\uc5d0 \ub3c4\ucc29\ud55c \uc9c0 3\uac1c\uc6d4 \ubc16\uc5d0 \ub418\uc9c0 \uc54a\uc558\uc9c0\ub9cc \ucee4\ud53c\ub355\ud6c4 \ub2e4\ube57\uc740 \ub370\uc774\ud2b8\ud558\uae30 \uc88b\uc740 \uc11c\uc6b8 \uce74\ud398\ub4e4\uc744 \ub2e4 \uaff0\uace0 \uc788\uc5c8\uc8e0.");
+  var description = $m_LI18n$().apply__T__T__T__LI18n("We met in Korea during David's masters exchange program. Despite arriving just three months before, David knew the best cafes in Seoul for dates.", "Potkali jsme se v Koreji b\u011bhem Davidova magistra na v\u00fdm\u011bnn\u00e9m pobytu. I p\u0159esto, \u017ee p\u0159ijel jen p\u0159ed t\u0159emi m\u011bs\u00edci, znal David ty nejlep\u0161\u00ed kav\u00e1rny v Soulu na rande.", "\ub2e4\ube57\uc774 \ud55c\uad6d\uc5d0\uc11c \uc11d\uc0ac \uad50\ud658 \uacfc\uc815 \uc911 \ub9cc\ub0ac\uc5b4\uc694. \ud55c\uad6d\uc5d0 \uc628\uc9c0 3\uac1c\uc6d4 \ubc16\uc5d0 \ub418\uc9c0 \uc54a\uc558\uc9c0\ub9cc \ucee4\ud53c\ub355\ud6c4 \ub2e4\ube57\uc740 \ub370\uc774\ud2b8\ud558\uae30 \uc88b\uc740 \uc11c\uc6b8 \uce74\ud398\ub4e4\uc744 \ub2e4 \uaff0\uace0 \uc788\uc5c8\uc8e0.");
   var $x_6 = new $c_LTimelineItem(title, date, description, "./images/first-data-cafe.jpg", false);
   var title$1 = $m_LI18n$().apply__T__T__T__LI18n("Long Distance Relationship", "Vztah na d\u00e1lku", "\uc7a5\uac70\ub9ac \uc5f0\uc560");
   var date$1 = new Date(2022, 0);
-  var description$1 = $m_LI18n$().apply__T__T__T__LI18n("David returned to Czech to finish his masters studies at his home university, starting our long distance relationship.", "David se vr\u00e1til do \u010ceska dokon\u010dit magistersk\u00e9 studium na sv\u00e9 domovsk\u00e9 univerzit\u011b, \u010d\u00edm\u017e za\u010dal n\u00e1\u0161 vztah na d\u00e1lku.", "\ub2e4\ube57\uc774 \ubcf8\uad50\uc5d0\uc11c \uc11d\uc0ac \uacfc\uc815\uc744 \ub9c8\uce58\uae30 \uc704\ud574 \uccb4\ucf54\ub85c \ub3cc\uc544\uac00\uba74\uc11c \uc6b0\ub9ac\uc758 \uc7a5\uac70\ub9ac \uc5f0\uc560\uac00 \uc2dc\uc791\ub418\uc5c8\uc2b5\ub2c8\ub2e4.");
+  var description$1 = $m_LI18n$().apply__T__T__T__LI18n("David returned to Czech to finish his masters studies at his home university, starting our long distance relationship.", "David se vr\u00e1til do \u010ceska dokon\u010dit magistersk\u00e9 studium na sv\u00e9 domovsk\u00e9 univerzit\u011b, \u010d\u00edm\u017e za\u010dal n\u00e1\u0161 vztah na d\u00e1lku.", "\ubcf8\uad50\uc5d0\uc11c \uc11d\uc0ac \uacfc\uc815\uc744 \ub9c8\uce58\uae30 \uc704\ud574 \ub2e4\ube57\uc740 \uccb4\ucf54\ub85c \ub3cc\uc544\uac14\uace0 \uc6b0\ub9ac\uc758 \uc7a5\uac70\ub9ac \uc5f0\uc560\uac00 \uc2dc\uc791\ub418\uc5c8\uc2b5\ub2c8\ub2e4.");
   var $x_5 = new $c_LTimelineItem(title$1, date$1, description$1, "./images/long-distance-rs.jpg", false);
   var title$2 = $m_LI18n$().apply__T__T__T__LI18n("Easter", "Velikonoce", "\ubd80\ud65c\uc808");
   var date$2 = new Date(2022, 3);
-  var description$2 = $m_LI18n$().apply__T__T__T__LI18n("We stuck to a meet-every-three-months rule for our long distance relationship. Suhyoon visited David for Easter, working remotely Com Prague for a month.", "Dr\u017eeli jsme se pravidla vid\u011bt se ka\u017ed\u00e9 t\u0159i m\u011bs\u00edce b\u011bhem na\u0161eho vztahu na d\u00e1lku. Suhyoon nav\u0161t\u00edvila Davida na Velikonoce a m\u011bs\u00edc pracovala vzd\u00e1len\u011b z Prahy.", "\uc6b0\ub9ac\ub294 3\uac1c\uc6d4\uc5d0 \ud55c \ubc88\uc529\uc740 \ub9cc\ub098\ub294 \uc7a5\uac70\ub9ac \uc5f0\uc560 \uaddc\uce59\uc744 \uc9c0\ucf30\uc5b4\uc694. \uc11c\uc724\uc740 \ubd80\ud65c\uc808\uc5d0 \ub2e4\ube57\uc744 \ubc29\ubb38\ud574 \ud55c \ub2ec \ub3d9\uc548 \ud504\ub77c\ud558\uc5d0\uc11c \uc6d0\uaca9 \uadfc\ubb34\ub97c \ud588\uc8e0.");
+  var description$2 = $m_LI18n$().apply__T__T__T__LI18n("We stuck to a meet-every-three-months rule for our long distance relationship. Suhyoon visited David for Easter, working remotely Com Prague for a month.", "Dr\u017eeli jsme se pravidla vid\u011bt se ka\u017ed\u00e9 t\u0159i m\u011bs\u00edce b\u011bhem na\u0161eho vztahu na d\u00e1lku. Suhyoon nav\u0161t\u00edvila Davida na Velikonoce a m\u011bs\u00edc pracovala vzd\u00e1len\u011b z Prahy.", "\uc6b0\ub9ac\ub294 3\uac1c\uc6d4\uc5d0 \ud55c \ubc88\uc740 \ub9cc\ub098\ub294 \uc7a5\uac70\ub9ac \uc5f0\uc560 \uaddc\uce59\uc744 \uc9c0\ucf30\uc5b4\uc694. \uc11c\uc724\uc740 \ubd80\ud65c\uc808\uc5d0 \ub2e4\ube57\uc744 \ubc29\ubb38\ud574 \ud55c \ub2ec \ub3d9\uc548 \ud504\ub77c\ud558\uc5d0\uc11c \uc6d0\uaca9 \uadfc\ubb34\ub97c \ud588\uc8e0.");
   var $x_4 = new $c_LTimelineItem(title$2, date$2, description$2, "./images/eastern-2022.jpg", false);
   var title$3 = $m_LI18n$().apply__T__T__T__LI18n("Moving In Together", "Spole\u010dn\u00e9 bydlen\u00ed", "\ub3d9\uac70 \uc2dc\uc791");
   var date$3 = new Date(2022, 11);
@@ -1206,15 +1282,15 @@ function $c_LOurStory$() {
   var $x_3 = new $c_LTimelineItem(title$3, date$3, description$3, "./images/david-graduation.jpg", false);
   var title$4 = $m_LI18n$().apply__T__T__T__LI18n("Remote", "Na d\u00e1lku", "\uc6d0\uaca9 \uadfc\ubb34");
   var date$4 = new Date(2023, 5);
-  var description$4 = $m_LI18n$().apply__T__T__T__LI18n("David took a remote job and joins Suhyoon in Cheongdo, Korea, for her traditional building course.Afterwards, Suhyoon starts her three-year architecture studies in London. David works from both Prague and London.", "David si na\u0161el pr\u00e1ci na d\u00e1lku a p\u0159ipojil se k Suhyoon v Cheongdo v Koreji b\u011bhem jej\u00edho kurzu tradi\u010dn\u00edho stavitelstv\u00ed. Pot\u00e9 Suhyoon za\u010dala t\u0159\u00edlet\u00e9 studium architektury v Lond\u00fdn\u011b. David pracuje z Prahy i Lond\u00fdna.", "\uc11c\uc724\uc774 \uccad\ub3c4\uc5d0\uc11c \uc804\ud1b5\ud55c\uc625\ubaa9\uc218 \uacfc\uc815\uc744 \uc774\uc218\ud558\ub294 \ub3d9\uc548 \ub2e4\ube57\ub3c4 \uc6d0\uaca9 \uadfc\ubb34\ub97c \ud558\uba70 \uc11c\uc724 \uc606\uc744 \uc9c0\ucf1c\uc92c\uc5b4\uc694. \uadf8 \ud6c4 \uc11c\uc724\uc774 \ub7f0\ub358\uc5d0\uc11c 3\ub144\uac04\uc758 \uac74\ucd95 \uacf5\ubd80\ub97c \uc2dc\uc791\ud588\uace0, \ub2e4\ube57\uc740 \ud604\uc7ac \ud504\ub77c\ud558\uc640 \ub7f0\ub358\uc744 \uc624\uac00\uba70 \uc77c\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.");
+  var description$4 = $m_LI18n$().apply__T__T__T__LI18n("David took a remote job and joins Suhyoon in Cheongdo, Korea, for her traditional building course.Afterwards, Suhyoon starts her three-year architecture studies in London. David works from both Prague and London.", "David si na\u0161el pr\u00e1ci na d\u00e1lku a p\u0159ipojil se k Suhyoon v Cheongdo v Koreji b\u011bhem jej\u00edho kurzu tradi\u010dn\u00edho stavitelstv\u00ed. Pot\u00e9 Suhyoon za\u010dala t\u0159\u00edlet\u00e9 studium architektury v Lond\u00fdn\u011b. David pracuje z Prahy i Lond\u00fdna.", "\uccad\ub3c4\uc5d0\uc11c \uc11c\uc724\uc774 \uc804\ud1b5\ud55c\uc625\ubaa9\uc218 \uacfc\uc815\uc744 \uc774\uc218\ud558\ub294 \ub3d9\uc548 \ub2e4\ube57\ub3c4 \uc6d0\uaca9 \uadfc\ubb34\ub97c \ud558\uba70 \uc11c\uc724 \uc606\uc5d0 \uc788\uc5b4\uc92c\uc5b4\uc694. \uadf8 \ud6c4 \uc11c\uc724\uc740 \ub7f0\ub358\uc5d0\uc11c 3\ub144\uac04\uc758 \uac74\ucd95 \uacf5\ubd80\ub97c \uc2dc\uc791\ud588\uace0, \ub2e4\ube57\uc740 \ud604\uc7ac \ud504\ub77c\ud558\uc640 \ub7f0\ub358\uc744 \uc624\uac00\uba70 \uc77c\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.");
   var $x_2 = new $c_LTimelineItem(title$4, date$4, description$4, "./images/cheongdo-cafe.jpg", false);
   var title$5 = $m_LI18n$().apply__T__T__T__LI18n("The Proposal", "Z\u00e1snuby", "\ud504\ub85c\ud3ec\uc988");
   var date$5 = new Date(2024, 0, 1);
-  var description$5 = $m_LI18n$().apply__T__T__T__LI18n("David proposes during a morning walk on the beach while vacationing in Egypt. Suhyoon said yes.", "David po\u017e\u00e1dal Suhyoon o ruku b\u011bhem rann\u00ed proch\u00e1zky po pl\u00e1\u017ei na dovolen\u00e9 v Egypt\u011b. Suhyoon \u0159ekla ano.", "\uc5f0\ub9d0\ud734\uac00\ub85c \ub180\ub7ec\uc628 \uc774\uc9d1\ud2b8 \ub9ac\uc870\ud2b8\uc5d0\uc11c \uc544\uce68 \ud574\ubcc0 \uc0b0\ucc45 \uc911 \ub2e4\ube57\uc774 \uae5c\uc9dd \ud504\ub85c\ud3ec\uc988\ub97c \ud588\uc5b4\uc694.");
+  var description$5 = $m_LI18n$().apply__T__T__T__LI18n("David proposes during a morning walk on the beach while vacationing in Egypt. Suhyoon said yes.", "David po\u017e\u00e1dal Suhyoon o ruku b\u011bhem rann\u00ed proch\u00e1zky po pl\u00e1\u017ei na dovolen\u00e9 v Egypt\u011b. Suhyoon \u0159ekla ano.", "\uc5f0\ub9d0\ud734\uac00\ub85c \ub180\ub7ec\uc628 \uc774\uc9d1\ud2b8\uc5d0\uc11c \uc544\uce68 \ud574\ubcc0 \uc0b0\ucc45 \uc911 \ub2e4\ube57\uc774 \uae5c\uc9dd \ud504\ub85c\ud3ec\uc988\ub97c \ud588\uc5b4\uc694.");
   var $x_1 = new $c_LTimelineItem(title$5, date$5, description$5, "./images/proposal.jpg", false);
   var title$6 = $m_LI18n$().apply__T__T__T__LI18n("Wedding", "Svatba", "\uacb0\ud63c\uc2dd");
   var date$6 = new Date(2024, 7, 29);
-  var description$6 = $m_LI18n$().apply__T__T__T__LI18n("After 4 years of juggling work, studies, moving, wedding planning... WE'RE GETTING MARRIED!! Come celebrate with us!!", "Po roce a p\u016fl \u017eonglov\u00e1n\u00ed mezi prac\u00ed, studiem, st\u011bhov\u00e1n\u00edm a pl\u00e1nov\u00e1n\u00edm svatby... BEREME SE!! P\u0159ij\u010fte to s n\u00e1mi oslavit!!", "4\ub144 \ub3d9\uc548 \uc5f8\ubbf8\ud788 \uc5f0\uc560, \uc77c \uacf5\ubd80, \uc774\uc0ac, \uacb0\ud63c \uc900\ube44\ub97c \ubcd1\ud589\ud55c \uc800\ud76c\uac00 \ub4dc\ub514\uc5b4 \uacb0\ud63c\ud569\ub2c8\ub2e4!! \ud568\uaed8 \ucd95\ud558\ud574 \uc8fc\uc138\uc694!!");
+  var description$6 = $m_LI18n$().apply__T__T__T__LI18n("After 4 years of juggling work, studies, moving, wedding planning... WE'RE GETTING MARRIED!! Come celebrate with us!!", "Po roce a p\u016fl \u017eonglov\u00e1n\u00ed mezi prac\u00ed, studiem, st\u011bhov\u00e1n\u00edm a pl\u00e1nov\u00e1n\u00edm svatby... BEREME SE!! P\u0159ij\u010fte to s n\u00e1mi oslavit!!", "4\ub144 \ub3d9\uc548 \uc5f4\uc2ec\ud788 \uc5f0\uc560, \uc77c, \uacf5\ubd80, \uc774\uc0ac, \uacb0\ud63c \uc900\ube44\ub97c \ud558\uace0 \ub4dc\ub514\uc5b4 \uacb0\ud63c\ud569\ub2c8\ub2e4! \ud568\uaed8 \ucd95\ud558\ud574 \uc8fc\uc138\uc694!");
   this.LOurStory$__f_timeline = new $c_sci_$colon$colon($x_6, new $c_sci_$colon$colon($x_5, new $c_sci_$colon$colon($x_4, new $c_sci_$colon$colon($x_3, new $c_sci_$colon$colon($x_2, new $c_sci_$colon$colon($x_1, new $c_sci_$colon$colon(new $c_LTimelineItem(title$6, date$6, description$6, "./images/dress-running.jpg", false), $m_sci_Nil$())))))));
 }
 $c_LOurStory$.prototype = new $h_O();
@@ -1287,14 +1363,14 @@ function $s_LWeddingInvitePage__main__AT__V(args) {
     }
   }
 }
-function $p_LWeddingInvitePage$package$__content$lzyINIT1$1__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lscalatags_JsDom$TypedTag($thiz, content$lzy1$1, navBar$lzy1$1, countdownSection$lzy1$1, headerSection$lzy1$1, inviteText$lzy1$1, scheduleSection$lzy1$1, ourStorySection$lzy1$1, footerSection$lzy1$1) {
+function $p_LWeddingInvitePage$package$__content$lzyINIT1$1__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lscalatags_JsDom$TypedTag($thiz, content$lzy1$1, navBar$lzy1$1, countdownSection$lzy1$1, headerSection$lzy1$1, inviteText$lzy1$1, scheduleSection$lzy1$1, ourStorySection$lzy1$1, giftSection$lzy1$1, footerSection$lzy1$1) {
   if ((content$lzy1$1 === null)) {
     throw new $c_jl_NullPointerException();
   }
-  return $as_Lscalatags_JsDom$TypedTag(($n(content$lzy1$1).sr_LazyRef__f__initialized ? $n(content$lzy1$1).sr_LazyRef__f__value : $n(content$lzy1$1).initialize__O__O($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$p_LWeddingInvitePage$package$__navBar$1__sr_LazyRef__Lscalatags_generic_TypedTag($thiz, navBar$lzy1$1), $p_LWeddingInvitePage$package$__countdownSection$1__sr_LazyRef__Lscalatags_generic_TypedTag($thiz, countdownSection$lzy1$1), $p_LWeddingInvitePage$package$__headerSection$1__sr_LazyRef__Lscalatags_JsDom$TypedTag($thiz, headerSection$lzy1$1), $p_LWeddingInvitePage$package$__inviteText$1__sr_LazyRef__Lscalatags_generic_TypedTag($thiz, inviteText$lzy1$1), $p_LWeddingInvitePage$package$__scheduleSection$1__sr_LazyRef__Lscalatags_generic_TypedTag($thiz, scheduleSection$lzy1$1), $p_LWeddingInvitePage$package$__ourStorySection$1__sr_LazyRef__Lscalatags_generic_TypedTag($thiz, ourStorySection$lzy1$1), $p_LWeddingInvitePage$package$__footerSection$1__sr_LazyRef__Lscalatags_generic_TypedTag($thiz, footerSection$lzy1$1)]))))));
+  return $as_Lscalatags_JsDom$TypedTag(($n(content$lzy1$1).sr_LazyRef__f__initialized ? $n(content$lzy1$1).sr_LazyRef__f__value : $n(content$lzy1$1).initialize__O__O($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$p_LWeddingInvitePage$package$__navBar$1__sr_LazyRef__Lscalatags_generic_TypedTag($thiz, navBar$lzy1$1), $p_LWeddingInvitePage$package$__countdownSection$1__sr_LazyRef__Lscalatags_generic_TypedTag($thiz, countdownSection$lzy1$1), $p_LWeddingInvitePage$package$__headerSection$1__sr_LazyRef__Lscalatags_JsDom$TypedTag($thiz, headerSection$lzy1$1), $p_LWeddingInvitePage$package$__inviteText$1__sr_LazyRef__Lscalatags_generic_TypedTag($thiz, inviteText$lzy1$1), $p_LWeddingInvitePage$package$__scheduleSection$1__sr_LazyRef__Lscalatags_generic_TypedTag($thiz, scheduleSection$lzy1$1), $p_LWeddingInvitePage$package$__ourStorySection$1__sr_LazyRef__Lscalatags_generic_TypedTag($thiz, ourStorySection$lzy1$1), $p_LWeddingInvitePage$package$__giftSection$1__sr_LazyRef__Lscalatags_generic_TypedTag($thiz, giftSection$lzy1$1), $p_LWeddingInvitePage$package$__footerSection$1__sr_LazyRef__Lscalatags_generic_TypedTag($thiz, footerSection$lzy1$1)]))))));
 }
-function $p_LWeddingInvitePage$package$__content$1__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lscalatags_JsDom$TypedTag($thiz, content$lzy1$2, navBar$lzy1$2, countdownSection$lzy1$2, headerSection$lzy1$2, inviteText$lzy1$2, scheduleSection$lzy1$2, ourStorySection$lzy1$2, footerSection$lzy1$2) {
-  return $as_Lscalatags_JsDom$TypedTag(($n(content$lzy1$2).sr_LazyRef__f__initialized ? $n(content$lzy1$2).sr_LazyRef__f__value : $p_LWeddingInvitePage$package$__content$lzyINIT1$1__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lscalatags_JsDom$TypedTag($thiz, content$lzy1$2, navBar$lzy1$2, countdownSection$lzy1$2, headerSection$lzy1$2, inviteText$lzy1$2, scheduleSection$lzy1$2, ourStorySection$lzy1$2, footerSection$lzy1$2)));
+function $p_LWeddingInvitePage$package$__content$1__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lscalatags_JsDom$TypedTag($thiz, content$lzy1$2, navBar$lzy1$2, countdownSection$lzy1$2, headerSection$lzy1$2, inviteText$lzy1$2, scheduleSection$lzy1$2, ourStorySection$lzy1$2, giftSection$lzy1$2, footerSection$lzy1$2) {
+  return $as_Lscalatags_JsDom$TypedTag(($n(content$lzy1$2).sr_LazyRef__f__initialized ? $n(content$lzy1$2).sr_LazyRef__f__value : $p_LWeddingInvitePage$package$__content$lzyINIT1$1__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lscalatags_JsDom$TypedTag($thiz, content$lzy1$2, navBar$lzy1$2, countdownSection$lzy1$2, headerSection$lzy1$2, inviteText$lzy1$2, scheduleSection$lzy1$2, ourStorySection$lzy1$2, giftSection$lzy1$2, footerSection$lzy1$2)));
 }
 function $p_LWeddingInvitePage$package$__navBar$lzyINIT1$1__sr_LazyRef__Lscalatags_generic_TypedTag($thiz, navBar$lzy1$3) {
   if ((navBar$lzy1$3 === null)) {
@@ -1772,6 +1848,159 @@ function $p_LWeddingInvitePage$package$__ourStorySection$lzyINIT1$1__sr_LazyRef_
 function $p_LWeddingInvitePage$package$__ourStorySection$1__sr_LazyRef__Lscalatags_generic_TypedTag($thiz, ourStorySection$lzy1$4) {
   return $as_Lscalatags_generic_TypedTag(($n(ourStorySection$lzy1$4).sr_LazyRef__f__initialized ? $n(ourStorySection$lzy1$4).sr_LazyRef__f__value : $p_LWeddingInvitePage$package$__ourStorySection$lzyINIT1$1__sr_LazyRef__Lscalatags_generic_TypedTag($thiz, ourStorySection$lzy1$4)));
 }
+function $p_LWeddingInvitePage$package$__giftSection$lzyINIT1$1__sr_LazyRef__Lscalatags_generic_TypedTag($thiz, giftSection$lzy1$3) {
+  if ((giftSection$lzy1$3 === null)) {
+    throw new $c_jl_NullPointerException();
+  }
+  if ($n(giftSection$lzy1$3).sr_LazyRef__f__initialized) {
+    var $x_1 = $n(giftSection$lzy1$3).sr_LazyRef__f__value;
+  } else {
+    var $x_59 = $n(giftSection$lzy1$3);
+    var this$1 = $n($m_Lscalatags_JsDom$tags2$().section__Lscalatags_generic_TypedTag());
+    var xs = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("py-12 px-6 bg-gray-50", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]));
+    var this$57 = $n(this$1.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs));
+    var $x_58 = $m_sr_ScalaRunTime$();
+    var $x_57 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("max-w-4xl mx-auto text-center", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
+    var $x_56 = $m_sr_ScalaRunTime$();
+    var this$7 = $n($m_Lscalatags_JsDom$all$().h2__Lscalatags_generic_TypedTag());
+    var $x_53 = $m_sr_ScalaRunTime$();
+    var $x_52 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text-3xl font-semibold mb-8 script-font text-pink-600", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
+    var $x_51 = $m_Llanguages$package$().Llanguages$package$__f_i18n;
+    var this$2 = $n($m_LGifts$().LGifts$__f_title);
+    var this$4 = $m_s_util_hashing_MurmurHash3$();
+    var this$5 = this$4.productHash__s_Product__I__Z__I(this$2, (-889275714), false);
+    var xs$1 = $x_53.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_52, $n($x_51).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(("" + this$5), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]));
+    var this$9 = $n(this$7.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$1));
+    var $x_54 = $m_sr_ScalaRunTime$();
+    $m_Lscalatags_JsDom$all$();
+    var v = $n($m_LGifts$().LGifts$__f_title).LI18n__f_en;
+    var xs$2 = $x_54.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$StringFrag(v)]));
+    var $x_55 = this$9.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$2);
+    var $x_50 = $as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().p__Lscalatags_generic_TypedTag());
+    var $x_49 = $m_sr_ScalaRunTime$();
+    var $x_48 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text-lg mb-6", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
+    var $x_47 = $m_Llanguages$package$().Llanguages$package$__f_i18n;
+    var this$10 = $n($m_LGifts$().LGifts$__f_description);
+    var this$12 = $m_s_util_hashing_MurmurHash3$();
+    var this$13 = this$12.productHash__s_Product__I__Z__I(this$10, (-889275714), false);
+    var $x_46 = $n($n($x_50).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_49.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_48, $n($x_47).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(("" + this$13), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]))));
+    var $x_45 = $m_sr_ScalaRunTime$();
+    $m_Lscalatags_JsDom$all$();
+    var v$1 = $n($m_LGifts$().LGifts$__f_description).LI18n__f_en;
+    var $x_44 = $x_46.apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_45.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$StringFrag(v$1)])));
+    var $x_43 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("grid md:grid-cols-2 gap-8 mt-8", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
+    var $x_42 = $m_sr_ScalaRunTime$();
+    var $x_41 = $n($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("bg-white p-6 rounded-lg shadow-sm", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]))));
+    var $x_40 = $m_sr_ScalaRunTime$();
+    var this$21 = $n($m_Lscalatags_JsDom$all$().h3__Lscalatags_generic_TypedTag());
+    var $x_37 = $m_sr_ScalaRunTime$();
+    var $x_36 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text-xl font-semibold mb-4", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
+    var $x_35 = $m_Llanguages$package$().Llanguages$package$__f_i18n;
+    var this$16 = $n($m_LGifts$FamilyMembers$().LGifts$FamilyMembers$__f_title);
+    var this$18 = $m_s_util_hashing_MurmurHash3$();
+    var this$19 = this$18.productHash__s_Product__I__Z__I(this$16, (-889275714), false);
+    var xs$3 = $x_37.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_36, $n($x_35).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(("" + this$19), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]));
+    var this$23 = $n(this$21.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$3));
+    var $x_38 = $m_sr_ScalaRunTime$();
+    $m_Lscalatags_JsDom$all$();
+    var v$2 = $n($m_LGifts$FamilyMembers$().LGifts$FamilyMembers$__f_title).LI18n__f_en;
+    var xs$4 = $x_38.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$StringFrag(v$2)]));
+    var $x_39 = this$23.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$4);
+    var $x_34 = $as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().p__Lscalatags_generic_TypedTag());
+    var $x_33 = $m_sr_ScalaRunTime$();
+    var $x_32 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text-gray-600 mb-4", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
+    var $x_31 = $m_Llanguages$package$().Llanguages$package$__f_i18n;
+    var this$24 = $n($m_LGifts$FamilyMembers$().LGifts$FamilyMembers$__f_description);
+    var this$26 = $m_s_util_hashing_MurmurHash3$();
+    var this$27 = this$26.productHash__s_Product__I__Z__I(this$24, (-889275714), false);
+    var $x_30 = $n($n($x_34).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_33.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_32, $n($x_31).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(("" + this$27), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]))));
+    var $x_29 = $m_sr_ScalaRunTime$();
+    $m_Lscalatags_JsDom$all$();
+    var v$3 = $n($m_LGifts$FamilyMembers$().LGifts$FamilyMembers$__f_description).LI18n__f_en;
+    var $x_28 = $x_30.apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_29.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$StringFrag(v$3)])));
+    var $x_27 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().ul__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text-left text-gray-600 mb-4 space-y-2 list-disc", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
+    var $x_26 = $m_sr_ScalaRunTime$();
+    var this$39 = $m_Lscalatags_JsDom$all$();
+    var this$36 = $n($m_LGifts$FamilyMembers$().LGifts$FamilyMembers$__f_instructions);
+    var f = ((i) => {
+      var i$1 = $as_LI18n(i);
+      var $x_25 = $as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().li__Lscalatags_generic_TypedTag());
+      var $x_24 = $m_sr_ScalaRunTime$();
+      var $x_23 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("ml-6", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
+      var $x_22 = $m_Llanguages$package$().Llanguages$package$__f_i18n;
+      var this$30 = $n(i$1);
+      var this$32 = $m_s_util_hashing_MurmurHash3$();
+      var this$33 = this$32.productHash__s_Product__I__Z__I(this$30, (-889275714), false);
+      var $x_21 = $n($n($x_25).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_24.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_23, $n($x_22).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(("" + this$33), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]))));
+      var $x_20 = $m_sr_ScalaRunTime$();
+      $m_Lscalatags_JsDom$all$();
+      var v$4 = $n(i$1).LI18n__f_en;
+      return $x_21.apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_20.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$StringFrag(v$4)])));
+    });
+    if ((this$36 === $m_sci_Nil$())) {
+      var xs$5 = $m_sci_Nil$();
+    } else {
+      var arg1 = this$36.head__O();
+      var h = new $c_sci_$colon$colon(f(arg1), $m_sci_Nil$());
+      var t = h;
+      var rest = $as_sci_List(this$36.tail__O());
+      while ((rest !== $m_sci_Nil$())) {
+        var arg1$1 = $n(rest).head__O();
+        var nx = new $c_sci_$colon$colon(f(arg1$1), $m_sci_Nil$());
+        $n(t).sci_$colon$colon__f_next = nx;
+        t = nx;
+        rest = $as_sci_List($n(rest).tail__O());
+      }
+      var xs$5 = h;
+    }
+    var this$38 = $m_s_$less$colon$less$();
+    var ev = this$38.s_$less$colon$less$__f_singleton;
+    var $x_19 = $x_41.apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_40.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_39, $x_28, $n($x_27).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_26.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$Cap$SeqFrag(this$39, xs$5, ev)])))])));
+    var $x_18 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("bg-white p-6 rounded-lg shadow-sm", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
+    var $x_17 = $m_sr_ScalaRunTime$();
+    var this$45 = $n($m_Lscalatags_JsDom$all$().h3__Lscalatags_generic_TypedTag());
+    var $x_14 = $m_sr_ScalaRunTime$();
+    var $x_13 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text-xl font-semibold mb-4", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
+    var $x_12 = $m_Llanguages$package$().Llanguages$package$__f_i18n;
+    var this$40 = $n($m_LGifts$Friends$().LGifts$Friends$__f_title);
+    var this$42 = $m_s_util_hashing_MurmurHash3$();
+    var this$43 = this$42.productHash__s_Product__I__Z__I(this$40, (-889275714), false);
+    var xs$6 = $x_14.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_13, $n($x_12).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(("" + this$43), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]));
+    var this$47 = $n(this$45.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$6));
+    var $x_15 = $m_sr_ScalaRunTime$();
+    $m_Lscalatags_JsDom$all$();
+    var v$5 = $n($m_LGifts$Friends$().LGifts$Friends$__f_title).LI18n__f_en;
+    var xs$7 = $x_15.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$StringFrag(v$5)]));
+    var $x_16 = this$47.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$7);
+    var $x_11 = $as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().p__Lscalatags_generic_TypedTag());
+    var $x_10 = $m_sr_ScalaRunTime$();
+    var $x_9 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text-gray-600", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
+    var $x_8 = $m_Llanguages$package$().Llanguages$package$__f_i18n;
+    var this$48 = $n($m_LGifts$Friends$().LGifts$Friends$__f_descriptions);
+    var this$50 = $m_s_util_hashing_MurmurHash3$();
+    var this$51 = this$50.productHash__s_Product__I__Z__I(this$48, (-889275714), false);
+    var $x_7 = $n($n($x_11).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_10.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_9, $n($x_8).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(("" + this$51), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]))));
+    var $x_6 = $m_sr_ScalaRunTime$();
+    $m_Lscalatags_JsDom$all$();
+    var v$6 = $n($m_LGifts$Friends$().LGifts$Friends$__f_descriptions).LI18n__f_en;
+    var $x_5 = $x_7.apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_6.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$StringFrag(v$6)])));
+    var $x_4 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("flex justify-center mt-4", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
+    var $x_3 = $m_sr_ScalaRunTime$();
+    var this$54 = $n($m_Lscalatags_JsDom$svgTags$().svg__Lscalatags_generic_TypedTag());
+    var xs$8 = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().xmlns__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("http://www.w3.org/2000/svg", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("h-6 w-6 text-pink-600", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$svgAttrs$().viewBox__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("0 0 20 20", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$svgAttrs$().fill__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("currentColor", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]));
+    var this$56 = $n(this$54.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$8));
+    var $x_2 = $m_sr_ScalaRunTime$();
+    var this$55 = $n($m_Lscalatags_JsDom$svgTags$().path__Lscalatags_generic_TypedTag());
+    var xs$9 = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$svgAttrs$().fillRule__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("evenodd", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$svgAttrs$().d__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$svgAttrs$().clipRule__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("evenodd", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]));
+    var xs$10 = $x_2.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([this$55.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$9)]));
+    var xs$11 = $x_58.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($x_57).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_56.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_55, $x_44, $n($x_43).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_42.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_19, $n($x_18).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_17.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_16, $x_5, $n($x_4).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_3.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([this$56.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$10)])))])))])))])))]));
+    var $x_1 = $x_59.initialize__O__O(this$57.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$11));
+  }
+  return $as_Lscalatags_generic_TypedTag($x_1);
+}
+function $p_LWeddingInvitePage$package$__giftSection$1__sr_LazyRef__Lscalatags_generic_TypedTag($thiz, giftSection$lzy1$4) {
+  return $as_Lscalatags_generic_TypedTag(($n(giftSection$lzy1$4).sr_LazyRef__f__initialized ? $n(giftSection$lzy1$4).sr_LazyRef__f__value : $p_LWeddingInvitePage$package$__giftSection$lzyINIT1$1__sr_LazyRef__Lscalatags_generic_TypedTag($thiz, giftSection$lzy1$4)));
+}
 function $p_LWeddingInvitePage$package$__footerSection$lzyINIT1$1__sr_LazyRef__Lscalatags_generic_TypedTag($thiz, footerSection$lzy1$3) {
   if ((footerSection$lzy1$3 === null)) {
     throw new $c_jl_NullPointerException();
@@ -1868,6 +2097,7 @@ $c_LWeddingInvitePage$package$.prototype.WeddingInvitePage__V = (function() {
   var inviteText$lzy1 = new $c_sr_LazyRef();
   var scheduleSection$lzy1 = new $c_sr_LazyRef();
   var ourStorySection$lzy1 = new $c_sr_LazyRef();
+  var giftSection$lzy1 = new $c_sr_LazyRef();
   var footerSection$lzy1 = new $c_sr_LazyRef();
   var styles$lzy1 = new $c_sr_LazyRef();
   var tailwindCss$lzy1 = new $c_sr_LazyRef();
@@ -1878,7 +2108,7 @@ $c_LWeddingInvitePage$package$.prototype.WeddingInvitePage__V = (function() {
   var $x_1 = document.head;
   var this$1 = $n($p_LWeddingInvitePage$package$__styles$1__sr_LazyRef__Lscalatags_generic_TypedTag(this, styles$lzy1));
   $x_1.appendChild(this$1.render__Lorg_scalajs_dom_Element());
-  document.body.appendChild($n($p_LWeddingInvitePage$package$__content$1__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lscalatags_JsDom$TypedTag(this, content$lzy1, navBar$lzy1, countdownSection$lzy1, headerSection$lzy1, inviteText$lzy1, scheduleSection$lzy1, ourStorySection$lzy1, footerSection$lzy1)).render__Lorg_scalajs_dom_Element());
+  document.body.appendChild($n($p_LWeddingInvitePage$package$__content$1__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__sr_LazyRef__Lscalatags_JsDom$TypedTag(this, content$lzy1, navBar$lzy1, countdownSection$lzy1, headerSection$lzy1, inviteText$lzy1, scheduleSection$lzy1, ourStorySection$lzy1, giftSection$lzy1, footerSection$lzy1)).render__Lorg_scalajs_dom_Element());
   $p_LWeddingInvitePage$package$__updateCountdown$1__V(this);
   $m_LLanguageManager$().setLanguage__LLanguage__V(lang);
   window.setInterval((() => {
@@ -1915,14 +2145,14 @@ function $c_LWeddingText$() {
   $n_LWeddingText$ = this;
   this.LWeddingText$__f_ourStory = $m_LI18n$().apply__T__T__T__LI18n("Our Story", "N\u00e1\u0161 P\u0159\u00edb\u011bh", "\uc6b0\ub9ac\uc758 \uc774\uc57c\uae30");
   this.LWeddingText$__f_photobook = $m_LI18n$().apply__T__T__T__LI18n("Photobook", "Fotokniha", "\ud3ec\ud1a0\ubd81");
-  this.LWeddingText$__f_gettingMaried = $m_LI18n$().apply__T__T__T__LI18n("Are Getting Married!", "Se Berou!", "\uacb0\ud63c\ud569\ub2c8\ub2e4!");
-  this.LWeddingText$__f_countdownTitle = $m_LI18n$().apply__T__T__T__LI18n("Counting down to our special day", "Odpo\u010d\u00edt\u00e1v\u00e1n\u00ed do na\u0161eho velk\u00e9ho dne", "\uc6b0\ub9ac\uc758 \ud2b9\ubcc4\ud55c \ub0a0\uae4c\uc9c0 \ub0a8\uc740 \uc2dc\uac04");
+  this.LWeddingText$__f_gettingMaried = $m_LI18n$().apply__T__T__T__LI18n("Are Getting Married!", "Se Berou!", "\uc800\ud76c \uacb0\ud63c\ud569\ub2c8\ub2e4!");
+  this.LWeddingText$__f_countdownTitle = $m_LI18n$().apply__T__T__T__LI18n("Counting down to our special day", "Odpo\u010d\u00edt\u00e1v\u00e1n\u00ed do na\u0161eho velk\u00e9ho dne", "\uacb0\ud63c\uc2dd\uae4c\uc9c0 \ub0a8\uc740 \uc2dc\uac04");
   $m_LI18n$().apply__T__T__T__LI18n("Kindly RSVP", "Pros\u00edm potvr\u010fte \u00fa\u010dast", "\ucc38\uc11d \uc5ec\ubd80\ub97c \uc54c\ub824\uc8fc\uc138\uc694");
   $m_LI18n$().apply__T__T__T__LI18n("Your Full Name", "Va\u0161e cel\u00e9 jm\u00e9no", "\uc131\ud568");
   $m_LI18n$().apply__T__T__T__LI18n("Email Address", "Emailov\u00e1 adresa", "\uc774\uba54\uc77c \uc8fc\uc18c");
   $m_LI18n$().apply__T__T__T__LI18n("Will you attend?", "Z\u00fa\u010dastn\u00edte se?", "\ucc38\uc11d\ud558\uc2dc\uaca0\uc2b5\ub2c8\uae4c?");
   this.LWeddingText$__f_scheduleTitle = $m_LI18n$().apply__T__T__T__LI18n("Wedding Schedule", "Program svatby", "\uacb0\ud63c\uc2dd \uc77c\uc815");
-  $m_LI18n$().apply__T__T__T__LI18n("Pre-Wedding", "Den p\u0159ed svatbou", "\uc6e8\ub529 \uc804\ub0a0");
+  $m_LI18n$().apply__T__T__T__LI18n("Pre-Wedding", "Den p\u0159ed svatbou", "\uacb0\ud63c\uc2dd \uc804\ub0a0");
   $m_LI18n$().apply__T__T__T__LI18n("Wedding Day", "Svatebn\u00ed den", "\uacb0\ud63c\uc2dd \ub2f9\uc77c");
   this.LWeddingText$__f_days = $m_LI18n$().apply__T__T__T__LI18n("Days", "Dny", "\uc77c");
   this.LWeddingText$__f_hours = $m_LI18n$().apply__T__T__T__LI18n("Hours", "Hodiny", "\uc2dc\uac04");
@@ -1970,7 +2200,7 @@ function $c_LWeddingTimeline$() {
   var $x_7 = new $c_LWeddingTimeline$Event(time$2, title$2, description$2);
   var time$3 = new Date(2025, 7, 29, 15);
   var title$3 = $m_LI18n$().apply__T__T__T__LI18n("Ceremony", "Ob\u0159ad", "\uacb0\ud63c\uc2dd");
-  var elems$1 = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T.getArrayOf().constr)(["Guest seated by 14:45 in upstairs pavillion", "15:30 Bestie BLESSINGs", "15:45 Round of Ribbons", "16:00 Group PHOTOSHOOT"]));
+  var elems$1 = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T.getArrayOf().constr)(["Guest seated by 14:45 in upstairs pavillion", "15:30 Bestie BLESSINGs", "15:45 Round of Ribbons", "16:00 PHOTOSHOOT"]));
   var description$3 = $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(elems$1);
   var $x_6 = new $c_LWeddingTimeline$Event(time$3, title$3, description$3);
   var time$4 = new Date(2025, 7, 29, 17);
@@ -1988,7 +2218,7 @@ function $c_LWeddingTimeline$() {
   var $x_3 = new $c_LWeddingTimeline$Event(time$6, title$6, description$6);
   var time$7 = new Date(2025, 7, 29, 20);
   var title$7 = $m_LI18n$().apply__T__T__T__LI18n("After Party", "After Party", "\uc560\ud504\ud130 \ud30c\ud2f0");
-  var elems$3 = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T.getArrayOf().constr)(["Dancing and celebrations", "20:00 Sister Act", "20:30 Speed Luiz", "21:00 Surprise Performance by Bride & Groom"]));
+  var elems$3 = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T.getArrayOf().constr)(["Dancing and celebrations", "21:00 Surprise Performance by Bride & Groom"]));
   var description$7 = $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(elems$3);
   var $x_2 = new $c_LWeddingTimeline$Event(time$7, title$7, description$7);
   var time$8 = new Date(2025, 7, 29, 22);
