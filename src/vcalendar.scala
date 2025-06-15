@@ -12,8 +12,8 @@ case class InviteCalendar(
     s"""BEGIN:VCALENDAR
        |VERSION:2.0
        |BEGIN:VEVENT
-       |DTSTART:20250929T150000
-       |DTEND:20250929T230000
+       |DTSTART:20250829T150000
+       |DTEND:20250829T230000
        |SUMMARY:$summary
        |DESCRIPTION:$description
        |LOCATION:$location
