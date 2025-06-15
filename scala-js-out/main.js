@@ -1112,13 +1112,13 @@ function $m_LGifts$() {
 function $c_LGifts$FamilyMembers$() {
   this.LGifts$FamilyMembers$__f_title = null;
   this.LGifts$FamilyMembers$__f_description = null;
-  this.LGifts$FamilyMembers$__f_account = null;
   this.LGifts$FamilyMembers$__f_instructions = null;
   $n_LGifts$FamilyMembers$ = this;
-  this.LGifts$FamilyMembers$__f_title = $m_LI18n$().apply__T__T__T__LI18n("For Family Members", "Pro \u010dleny rodiny", "\uac00\uc871\ubd84\ub4e4\uaed8");
-  this.LGifts$FamilyMembers$__f_description = $m_LI18n$().apply__T__T__T__LI18n("For family members who want to send gifts to the bride's side:", "Pro rodinn\u00e9 p\u0159\u00edslu\u0161n\u00edky, kte\u0159\u00ed cht\u011bj\u00ed poslat dary rodin\u011b nev\u011bsty:", "\uc2e0\ubd80\uce21\uc5d0 \ub9c8\uc74c \uc804\ud558\uc2dc\uace0 \uc2f6\uc740 \ubd84:");
-  this.LGifts$FamilyMembers$__f_account = "\uc774\ubcd1\ud638 (\uad6d\ubbfc 817-21-0154-152)";
-  this.LGifts$FamilyMembers$__f_instructions = new $c_sci_$colon$colon($m_LI18n$().apply__T__T__T__LI18n(("Make a bank transfer: " + this.LGifts$FamilyMembers$__f_account), "Bankovn\u00ed p\u0159evod", ("\uacc4\uc88c\uc774\uccb4: " + this.LGifts$FamilyMembers$__f_account)), new $c_sci_$colon$colon($m_LI18n$().apply__T__T__T__LI18n("Use the gift box available at the wedding venue", "Pou\u017e\u00edt d\u00e1rkovou krabici dostupnou na svatebn\u00edm m\u00edst\u011b", "\uacb0\ud63c\uc2dd\uc7a5\uc5d0 \ub9c8\ub828\ub41c \uc120\ubb3c\ud568\uc744 \uc774\uc6a9\ud574\uc8fc\uc138\uc694"), $m_sci_Nil$()));
+  this.LGifts$FamilyMembers$__f_title = $m_LI18n$().apply__T__T__T__LI18n("For bride's side", "", "");
+  var this$1 = $m_LI18n$();
+  this.LGifts$FamilyMembers$__f_description = this$1.apply__T__T__T__LI18n("\ub9c8\uc74c \uc804\ud558\uc2e4 \uacf3", "\ub9c8\uc74c \uc804\ud558\uc2e4 \uacf3", "\ub9c8\uc74c \uc804\ud558\uc2e4 \uacf3");
+  var this$2 = $m_LI18n$();
+  this.LGifts$FamilyMembers$__f_instructions = new $c_sci_$colon$colon(this$2.apply__T__T__T__LI18n("\uad6d\ubbfc 817-21-0154-152 (\uc774\ubcd1\ud638)", "\uad6d\ubbfc 817-21-0154-152 (\uc774\ubcd1\ud638)", "\uad6d\ubbfc 817-21-0154-152 (\uc774\ubcd1\ud638)"), $m_sci_Nil$());
 }
 $c_LGifts$FamilyMembers$.prototype = new $h_O();
 $c_LGifts$FamilyMembers$.prototype.constructor = $c_LGifts$FamilyMembers$;
@@ -1142,7 +1142,7 @@ function $c_LGifts$Friends$() {
   this.LGifts$Friends$__f_descriptions = null;
   $n_LGifts$Friends$ = this;
   this.LGifts$Friends$__f_title = $m_LI18n$().apply__T__T__T__LI18n("For Our Friends", "Pro na\u0161e p\u0159\u00e1tele", "\uce5c\uad6c\ubd84\ub4e4\uaed8");
-  this.LGifts$Friends$__f_descriptions = $m_LI18n$().apply__T__T__T__LI18n("Your friendship and presence at our wedding is truly the greatest gift we could ask for. We request no presents - just your company to share in our joy and celebration.", "Va\u0161e p\u0159\u00e1telstv\u00ed a p\u0159\u00edtomnost na na\u0161\u00ed svatb\u011b je skute\u010dn\u011b nejv\u011bt\u0161\u00edm darem, o kter\u00fd bychom mohli po\u017e\u00e1dat. Ne\u017e\u00e1d\u00e1me \u017e\u00e1dn\u00e9 dary - jen va\u0161i spole\u010dnost ke sd\u00edlen\u00ed na\u0161\u00ed radosti a oslav.", "\uc5ec\ub7ec\ubd84\uc758 \uc6b0\uc815\uacfc \ucc38\uc11d\uc774 \uc800\ud76c\uc5d0\uac8c \uac00\uc7a5 \ud070 \uc120\ubb3c\uc785\ub2c8\ub2e4. \ub530\ub85c \uc120\ubb3c\uc740 \uc900\ube44\ud558\uc9c0 \ub9c8\uc2dc\uace0 \uc800\ud76c\uc758 \uae30\uc068\uc744 \ud568\uaed8 \ub098\ub204\uc5b4 \uc8fc\uc138\uc694.");
+  this.LGifts$Friends$__f_descriptions = $m_LI18n$().apply__T__T__T__LI18n("Your friendship and presence at our wedding is truly the greatest gift we could ask for.", "Va\u0161e p\u0159\u00e1telstv\u00ed a p\u0159\u00edtomnost na na\u0161\u00ed svatb\u011b je skute\u010dn\u011b nejv\u011bt\u0161\u00edm darem, o kter\u00fd bychom mohli po\u017e\u00e1dat.", "\uc5ec\ub7ec\ubd84\uc758 \uc6b0\uc815\uacfc \ucc38\uc11d\uc774 \uc800\ud76c\uc5d0\uac8c \uac00\uc7a5 \ud070 \uc120\ubb3c\uc785\ub2c8\ub2e4.");
 }
 $c_LGifts$Friends$.prototype = new $h_O();
 $c_LGifts$Friends$.prototype.constructor = $c_LGifts$Friends$;

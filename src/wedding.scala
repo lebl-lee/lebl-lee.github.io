@@ -291,24 +291,10 @@ object Gifts:
   )
 
   object FamilyMembers:
-    val title = I18n("For Family Members", "Pro členy rodiny", "가족분들께")
-    val description = I18n(
-      "For family members who want to send gifts to the bride's side:",
-      "Pro rodinné příslušníky, kteří chtějí poslat dary rodině nevěsty:",
-      "신부측에 마음 전하시고 싶은 분:"
-    )
-    val account = "이병호 (국민 817-21-0154-152)"
+    val title = I18n("For bride's side", "", "")
+    val description = I18n.single("마음 전하실 곳")
     val instructions = List(
-      I18n(
-        s"Make a bank transfer: $account",
-        s"Bankovní převod",
-        s"계좌이체: $account"
-      ),
-      I18n(
-        "Use the gift box available at the wedding venue",
-        "Použít dárkovou krabici dostupnou na svatebním místě",
-        "결혼식장에 마련된 선물함을 이용해주세요"
-      )
+      I18n.single(s"국민 817-21-0154-152 (이병호)"),
     )
 
   object Friends:
@@ -318,9 +304,9 @@ object Gifts:
       "친구분들께"
     )
     val descriptions = I18n(
-      "Your friendship and presence at our wedding is truly the greatest gift we could ask for. We request no presents - just your company to share in our joy and celebration.",
-      "Vaše přátelství a přítomnost na naší svatbě je skutečně největším darem, o který bychom mohli požádat. Nežádáme žádné dary - jen vaši společnost ke sdílení naší radosti a oslav.",
-      "여러분의 우정과 참석이 저희에게 가장 큰 선물입니다. 따로 선물은 준비하지 마시고 저희의 기쁨을 함께 나누어 주세요."
+      "Your friendship and presence at our wedding is truly the greatest gift we could ask for.",
+      "Vaše přátelství a přítomnost na naší svatbě je skutečně největším darem, o který bychom mohli požádat.",
+      "여러분의 우정과 참석이 저희에게 가장 큰 선물입니다."
     )
 
 end Gifts
