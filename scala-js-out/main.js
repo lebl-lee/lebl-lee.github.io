@@ -1984,7 +1984,7 @@ function $p_LWeddingInvitePage$package$__giftSection$lzyINIT1$1__sr_LazyRef__Lsc
     $m_Lscalatags_JsDom$all$();
     var v$3 = $n($m_LGifts$FamilyMembers$().LGifts$FamilyMembers$__f_description).LI18n__f_en;
     var $x_28 = $x_30.apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_29.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$StringFrag(v$3)])));
-    var $x_27 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().ul__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text-left text-gray-600 mb-4 space-y-2 list-disc", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
+    var $x_27 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().ul__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text-center text-gray-600 mb-4 space-y-2", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
     var $x_26 = $m_sr_ScalaRunTime$();
     var this$39 = $m_Lscalatags_JsDom$all$();
     var this$36 = $n($m_LGifts$FamilyMembers$().LGifts$FamilyMembers$__f_instructions);
@@ -1992,7 +1992,7 @@ function $p_LWeddingInvitePage$package$__giftSection$lzyINIT1$1__sr_LazyRef__Lsc
       var i$1 = $as_LI18n(i);
       var $x_25 = $as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().li__Lscalatags_generic_TypedTag());
       var $x_24 = $m_sr_ScalaRunTime$();
-      var $x_23 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("ml-6", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
+      var $x_23 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("flex", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
       var $x_22 = $m_Llanguages$package$().Llanguages$package$__f_i18n;
       var this$30 = $n(i$1);
       var this$32 = $m_s_util_hashing_MurmurHash3$();
