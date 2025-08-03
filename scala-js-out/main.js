@@ -1316,7 +1316,7 @@ function $c_LRsvp$() {
   this.LRsvp$__f_confirmedRateInt = 0.0;
   $n_LRsvp$ = this;
   this.LRsvp$__f_capacity = 40;
-  this.LRsvp$__f_confirmed = 32;
+  this.LRsvp$__f_confirmed = 36;
   this.LRsvp$__f_confirmedRateInt = (100.0 * ((1.0 / this.LRsvp$__f_capacity) * this.LRsvp$__f_confirmed));
 }
 $c_LRsvp$.prototype = new $h_O();
