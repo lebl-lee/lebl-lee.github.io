@@ -259,9 +259,9 @@ object OurStory:
       I18n("The Proposal", "Zásnuby", "프로포즈"),
       new Date(2024, 0, 1),
       I18n(
-        "David proposes during a morning walk on the beach while vacationing in Egypt. Suhyoon said yes.",
-        "David požádal Suhyoon o ruku během ranní procházky po pláži na dovolené v Egyptě. Suhyoon řekla ano.",
-        "연말휴가로 놀러온 이집트에서 아침 해변 산책 중 다빗이 깜짝 프로포즈를 했어요."
+        "David proposes during a morning walk on the beach. Suhyoon said yes.",
+        "David požádal Suhyoon o ruku během ranní procházky po pláži na dovolené. Suhyoon řekla ano.",
+        "아침 해변 산책 중 다빗이 깜짝 프로포즈를 했어요."
       ),
       "./images/proposal.jpg"
     ),

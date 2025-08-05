@@ -1286,7 +1286,7 @@ function $c_LOurStory$() {
   var $x_2 = new $c_LTimelineItem(title$4, date$4, description$4, "./images/cheongdo-cafe.jpg", false);
   var title$5 = $m_LI18n$().apply__T__T__T__LI18n("The Proposal", "Z\u00e1snuby", "\ud504\ub85c\ud3ec\uc988");
   var date$5 = new Date(2024, 0, 1);
-  var description$5 = $m_LI18n$().apply__T__T__T__LI18n("David proposes during a morning walk on the beach while vacationing in Egypt. Suhyoon said yes.", "David po\u017e\u00e1dal Suhyoon o ruku b\u011bhem rann\u00ed proch\u00e1zky po pl\u00e1\u017ei na dovolen\u00e9 v Egypt\u011b. Suhyoon \u0159ekla ano.", "\uc5f0\ub9d0\ud734\uac00\ub85c \ub180\ub7ec\uc628 \uc774\uc9d1\ud2b8\uc5d0\uc11c \uc544\uce68 \ud574\ubcc0 \uc0b0\ucc45 \uc911 \ub2e4\ube57\uc774 \uae5c\uc9dd \ud504\ub85c\ud3ec\uc988\ub97c \ud588\uc5b4\uc694.");
+  var description$5 = $m_LI18n$().apply__T__T__T__LI18n("David proposes during a morning walk on the beach. Suhyoon said yes.", "David po\u017e\u00e1dal Suhyoon o ruku b\u011bhem rann\u00ed proch\u00e1zky po pl\u00e1\u017ei na dovolen\u00e9. Suhyoon \u0159ekla ano.", "\uc544\uce68 \ud574\ubcc0 \uc0b0\ucc45 \uc911 \ub2e4\ube57\uc774 \uae5c\uc9dd \ud504\ub85c\ud3ec\uc988\ub97c \ud588\uc5b4\uc694.");
   var $x_1 = new $c_LTimelineItem(title$5, date$5, description$5, "./images/proposal.jpg", false);
   var title$6 = $m_LI18n$().apply__T__T__T__LI18n("Wedding", "Svatba", "\uacb0\ud63c\uc2dd");
   var date$6 = new Date(2024, 7, 29);
