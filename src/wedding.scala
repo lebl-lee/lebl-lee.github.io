@@ -257,7 +257,7 @@ object OurStory:
     ),
     TimelineItem(
       I18n("The Proposal", "Zásnuby", "프로포즈"),
-      new Date(2024, 0, 1),
+      new Date(2025, 0, 1),
       I18n(
         "David proposes during a morning walk on the beach. Suhyoon said yes.",
         "David požádal Suhyoon o ruku během ranní procházky po pláži na dovolené. Suhyoon řekla ano.",
@@ -267,7 +267,7 @@ object OurStory:
     ),
     TimelineItem(
       I18n("Wedding", "Svatba", "결혼식"),
-      new Date(2024, 7, 29),
+      new Date(2025, 7, 29),
       I18n(
         "After 4 years of juggling work, studies, moving, wedding planning... WE'RE GETTING MARRIED!! Come celebrate with us!!",
         "Po roce a půl žonglování mezi prací, studiem, stěhováním a plánováním svatby... BEREME SE!! Přijďte to s námi oslavit!!",
