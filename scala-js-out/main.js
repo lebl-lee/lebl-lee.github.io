@@ -1109,34 +1109,6 @@ function $m_LGifts$() {
   return $n_LGifts$;
 }
 /** @constructor */
-function $c_LGifts$FamilyMembers$() {
-  this.LGifts$FamilyMembers$__f_title = null;
-  this.LGifts$FamilyMembers$__f_description = null;
-  this.LGifts$FamilyMembers$__f_instructions = null;
-  $n_LGifts$FamilyMembers$ = this;
-  this.LGifts$FamilyMembers$__f_title = $m_LI18n$().apply__T__T__T__LI18n("For bride's side", "Pro stranu nev\u011bsty", "\uc2e0\ubd80\uce21");
-  var this$1 = $m_LI18n$();
-  this.LGifts$FamilyMembers$__f_description = this$1.apply__T__T__T__LI18n("\ub9c8\uc74c \uc804\ud558\uc2e4 \uacf3", "\ub9c8\uc74c \uc804\ud558\uc2e4 \uacf3", "\ub9c8\uc74c \uc804\ud558\uc2e4 \uacf3");
-  var this$2 = $m_LI18n$();
-  this.LGifts$FamilyMembers$__f_instructions = new $c_sci_$colon$colon(this$2.apply__T__T__T__LI18n("\uad6d\ubbfc 817-21-0154-152 (\uc774\ubcd1\ud638)", "\uad6d\ubbfc 817-21-0154-152 (\uc774\ubcd1\ud638)", "\uad6d\ubbfc 817-21-0154-152 (\uc774\ubcd1\ud638)"), $m_sci_Nil$());
-}
-$c_LGifts$FamilyMembers$.prototype = new $h_O();
-$c_LGifts$FamilyMembers$.prototype.constructor = $c_LGifts$FamilyMembers$;
-/** @constructor */
-function $h_LGifts$FamilyMembers$() {
-}
-$h_LGifts$FamilyMembers$.prototype = $c_LGifts$FamilyMembers$.prototype;
-var $d_LGifts$FamilyMembers$ = new $TypeData().initClass($c_LGifts$FamilyMembers$, "Gifts$FamilyMembers$", ({
-  LGifts$FamilyMembers$: 1
-}));
-var $n_LGifts$FamilyMembers$;
-function $m_LGifts$FamilyMembers$() {
-  if ((!$n_LGifts$FamilyMembers$)) {
-    $n_LGifts$FamilyMembers$ = new $c_LGifts$FamilyMembers$();
-  }
-  return $n_LGifts$FamilyMembers$;
-}
-/** @constructor */
 function $c_LGifts$Friends$() {
   this.LGifts$Friends$__f_title = null;
   this.LGifts$Friends$__f_descriptions = null;
@@ -1285,11 +1257,11 @@ function $c_LOurStory$() {
   var description$4 = $m_LI18n$().apply__T__T__T__LI18n("David took a remote job and joins Suhyoon in Cheongdo, Korea, for her traditional building course.Afterwards, Suhyoon starts her three-year architecture studies in London. David works from both Prague and London.", "David si na\u0161el pr\u00e1ci na d\u00e1lku a p\u0159ipojil se k Suhyoon v Cheongdo v Koreji b\u011bhem jej\u00edho kurzu tradi\u010dn\u00edho stavitelstv\u00ed. Pot\u00e9 Suhyoon za\u010dala t\u0159\u00edlet\u00e9 studium architektury v Lond\u00fdn\u011b. David pracuje z Prahy i Lond\u00fdna.", "\uccad\ub3c4\uc5d0\uc11c \uc11c\uc724\uc774 \uc804\ud1b5\ud55c\uc625\ubaa9\uc218 \uacfc\uc815\uc744 \uc774\uc218\ud558\ub294 \ub3d9\uc548 \ub2e4\ube57\ub3c4 \uc6d0\uaca9 \uadfc\ubb34\ub97c \ud558\uba70 \uc11c\uc724 \uc606\uc5d0 \uc788\uc5b4\uc92c\uc5b4\uc694. \uadf8 \ud6c4 \uc11c\uc724\uc740 \ub7f0\ub358\uc5d0\uc11c 3\ub144\uac04\uc758 \uac74\ucd95 \uacf5\ubd80\ub97c \uc2dc\uc791\ud588\uace0, \ub2e4\ube57\uc740 \ud604\uc7ac \ud504\ub77c\ud558\uc640 \ub7f0\ub358\uc744 \uc624\uac00\uba70 \uc77c\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4.");
   var $x_2 = new $c_LTimelineItem(title$4, date$4, description$4, "./images/cheongdo-cafe.jpg", false);
   var title$5 = $m_LI18n$().apply__T__T__T__LI18n("The Proposal", "Z\u00e1snuby", "\ud504\ub85c\ud3ec\uc988");
-  var date$5 = new Date(2024, 0, 1);
+  var date$5 = new Date(2025, 0, 1);
   var description$5 = $m_LI18n$().apply__T__T__T__LI18n("David proposes during a morning walk on the beach. Suhyoon said yes.", "David po\u017e\u00e1dal Suhyoon o ruku b\u011bhem rann\u00ed proch\u00e1zky po pl\u00e1\u017ei na dovolen\u00e9. Suhyoon \u0159ekla ano.", "\uc544\uce68 \ud574\ubcc0 \uc0b0\ucc45 \uc911 \ub2e4\ube57\uc774 \uae5c\uc9dd \ud504\ub85c\ud3ec\uc988\ub97c \ud588\uc5b4\uc694.");
   var $x_1 = new $c_LTimelineItem(title$5, date$5, description$5, "./images/proposal.jpg", false);
   var title$6 = $m_LI18n$().apply__T__T__T__LI18n("Wedding", "Svatba", "\uacb0\ud63c\uc2dd");
-  var date$6 = new Date(2024, 7, 29);
+  var date$6 = new Date(2025, 7, 29);
   var description$6 = $m_LI18n$().apply__T__T__T__LI18n("After 4 years of juggling work, studies, moving, wedding planning... WE'RE GETTING MARRIED!! Come celebrate with us!!", "Po roce a p\u016fl \u017eonglov\u00e1n\u00ed mezi prac\u00ed, studiem, st\u011bhov\u00e1n\u00edm a pl\u00e1nov\u00e1n\u00edm svatby... BEREME SE!! P\u0159ij\u010fte to s n\u00e1mi oslavit!!", "4\ub144 \ub3d9\uc548 \uc5f4\uc2ec\ud788 \uc5f0\uc560, \uc77c, \uacf5\ubd80, \uc774\uc0ac, \uacb0\ud63c \uc900\ube44\ub97c \ud558\uace0 \ub4dc\ub514\uc5b4 \uacb0\ud63c\ud569\ub2c8\ub2e4! \ud568\uaed8 \ucd95\ud558\ud574 \uc8fc\uc138\uc694!");
   this.LOurStory$__f_timeline = new $c_sci_$colon$colon($x_6, new $c_sci_$colon$colon($x_5, new $c_sci_$colon$colon($x_4, new $c_sci_$colon$colon($x_3, new $c_sci_$colon$colon($x_2, new $c_sci_$colon$colon($x_1, new $c_sci_$colon$colon(new $c_LTimelineItem(title$6, date$6, description$6, "./images/dress-running.jpg", false), $m_sci_Nil$())))))));
 }
@@ -1921,146 +1893,80 @@ function $p_LWeddingInvitePage$package$__giftSection$lzyINIT1$1__sr_LazyRef__Lsc
   if ($n(giftSection$lzy1$3).sr_LazyRef__f__initialized) {
     var $x_1 = $n(giftSection$lzy1$3).sr_LazyRef__f__value;
   } else {
-    var $x_59 = $n(giftSection$lzy1$3);
+    var $x_36 = $n(giftSection$lzy1$3);
     var this$1 = $n($m_Lscalatags_JsDom$tags2$().section__Lscalatags_generic_TypedTag());
     var xs = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("py-12 px-6 bg-gray-50", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]));
-    var this$57 = $n(this$1.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs));
-    var $x_58 = $m_sr_ScalaRunTime$();
-    var $x_57 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("max-w-4xl mx-auto text-center", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
-    var $x_56 = $m_sr_ScalaRunTime$();
+    var this$33 = $n(this$1.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs));
+    var $x_35 = $m_sr_ScalaRunTime$();
+    var $x_34 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("max-w-4xl mx-auto text-center", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
+    var $x_33 = $m_sr_ScalaRunTime$();
     var this$7 = $n($m_Lscalatags_JsDom$all$().h2__Lscalatags_generic_TypedTag());
-    var $x_53 = $m_sr_ScalaRunTime$();
-    var $x_52 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text-3xl font-semibold mb-8 script-font text-pink-600", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
-    var $x_51 = $m_Llanguages$package$().Llanguages$package$__f_i18n;
+    var $x_30 = $m_sr_ScalaRunTime$();
+    var $x_29 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text-3xl font-semibold mb-8 script-font text-pink-600", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
+    var $x_28 = $m_Llanguages$package$().Llanguages$package$__f_i18n;
     var this$2 = $n($m_LGifts$().LGifts$__f_title);
     var this$4 = $m_s_util_hashing_MurmurHash3$();
     var this$5 = this$4.productHash__s_Product__I__Z__I(this$2, (-889275714), false);
-    var xs$1 = $x_53.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_52, $n($x_51).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(("" + this$5), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]));
+    var xs$1 = $x_30.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_29, $n($x_28).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(("" + this$5), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]));
     var this$9 = $n(this$7.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$1));
-    var $x_54 = $m_sr_ScalaRunTime$();
+    var $x_31 = $m_sr_ScalaRunTime$();
     $m_Lscalatags_JsDom$all$();
     var v = $n($m_LGifts$().LGifts$__f_title).LI18n__f_en;
-    var xs$2 = $x_54.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$StringFrag(v)]));
-    var $x_55 = this$9.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$2);
-    var $x_50 = $as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().p__Lscalatags_generic_TypedTag());
-    var $x_49 = $m_sr_ScalaRunTime$();
-    var $x_48 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text-lg mb-6", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
-    var $x_47 = $m_Llanguages$package$().Llanguages$package$__f_i18n;
+    var xs$2 = $x_31.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$StringFrag(v)]));
+    var $x_32 = this$9.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$2);
+    var $x_27 = $as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().p__Lscalatags_generic_TypedTag());
+    var $x_26 = $m_sr_ScalaRunTime$();
+    var $x_25 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text-lg mb-6", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
+    var $x_24 = $m_Llanguages$package$().Llanguages$package$__f_i18n;
     var this$10 = $n($m_LGifts$().LGifts$__f_description);
     var this$12 = $m_s_util_hashing_MurmurHash3$();
     var this$13 = this$12.productHash__s_Product__I__Z__I(this$10, (-889275714), false);
-    var $x_46 = $n($n($x_50).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_49.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_48, $n($x_47).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(("" + this$13), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]))));
-    var $x_45 = $m_sr_ScalaRunTime$();
+    var $x_23 = $n($n($x_27).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_26.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_25, $n($x_24).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(("" + this$13), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]))));
+    var $x_22 = $m_sr_ScalaRunTime$();
     $m_Lscalatags_JsDom$all$();
     var v$1 = $n($m_LGifts$().LGifts$__f_description).LI18n__f_en;
-    var $x_44 = $x_46.apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_45.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$StringFrag(v$1)])));
-    var $x_43 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("grid md:grid-cols-2 gap-8 mt-8", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
-    var $x_42 = $m_sr_ScalaRunTime$();
-    var $x_41 = $n($n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("bg-white p-6 rounded-lg shadow-sm", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]))));
-    var $x_40 = $m_sr_ScalaRunTime$();
-    var this$21 = $n($m_Lscalatags_JsDom$all$().h3__Lscalatags_generic_TypedTag());
-    var $x_37 = $m_sr_ScalaRunTime$();
-    var $x_36 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text-xl font-semibold mb-4", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
-    var $x_35 = $m_Llanguages$package$().Llanguages$package$__f_i18n;
-    var this$16 = $n($m_LGifts$FamilyMembers$().LGifts$FamilyMembers$__f_title);
-    var this$18 = $m_s_util_hashing_MurmurHash3$();
-    var this$19 = this$18.productHash__s_Product__I__Z__I(this$16, (-889275714), false);
-    var xs$3 = $x_37.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_36, $n($x_35).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(("" + this$19), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]));
-    var this$23 = $n(this$21.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$3));
-    var $x_38 = $m_sr_ScalaRunTime$();
-    $m_Lscalatags_JsDom$all$();
-    var v$2 = $n($m_LGifts$FamilyMembers$().LGifts$FamilyMembers$__f_title).LI18n__f_en;
-    var xs$4 = $x_38.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$StringFrag(v$2)]));
-    var $x_39 = this$23.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$4);
-    var $x_34 = $as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().p__Lscalatags_generic_TypedTag());
-    var $x_33 = $m_sr_ScalaRunTime$();
-    var $x_32 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text-gray-600 mb-4", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
-    var $x_31 = $m_Llanguages$package$().Llanguages$package$__f_i18n;
-    var this$24 = $n($m_LGifts$FamilyMembers$().LGifts$FamilyMembers$__f_description);
-    var this$26 = $m_s_util_hashing_MurmurHash3$();
-    var this$27 = this$26.productHash__s_Product__I__Z__I(this$24, (-889275714), false);
-    var $x_30 = $n($n($x_34).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_33.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_32, $n($x_31).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(("" + this$27), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]))));
-    var $x_29 = $m_sr_ScalaRunTime$();
-    $m_Lscalatags_JsDom$all$();
-    var v$3 = $n($m_LGifts$FamilyMembers$().LGifts$FamilyMembers$__f_description).LI18n__f_en;
-    var $x_28 = $x_30.apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_29.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$StringFrag(v$3)])));
-    var $x_27 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().ul__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text-center text-gray-600 mb-4 space-y-2", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
-    var $x_26 = $m_sr_ScalaRunTime$();
-    var this$39 = $m_Lscalatags_JsDom$all$();
-    var this$36 = $n($m_LGifts$FamilyMembers$().LGifts$FamilyMembers$__f_instructions);
-    var f = ((i) => {
-      var i$1 = $as_LI18n(i);
-      var $x_25 = $as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().li__Lscalatags_generic_TypedTag());
-      var $x_24 = $m_sr_ScalaRunTime$();
-      var $x_23 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("flex justify-center", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
-      var $x_22 = $m_Llanguages$package$().Llanguages$package$__f_i18n;
-      var this$30 = $n(i$1);
-      var this$32 = $m_s_util_hashing_MurmurHash3$();
-      var this$33 = this$32.productHash__s_Product__I__Z__I(this$30, (-889275714), false);
-      var $x_21 = $n($n($x_25).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_24.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_23, $n($x_22).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(("" + this$33), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]))));
-      var $x_20 = $m_sr_ScalaRunTime$();
-      $m_Lscalatags_JsDom$all$();
-      var v$4 = $n(i$1).LI18n__f_en;
-      return $x_21.apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_20.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$StringFrag(v$4)])));
-    });
-    if ((this$36 === $m_sci_Nil$())) {
-      var xs$5 = $m_sci_Nil$();
-    } else {
-      var arg1 = this$36.head__O();
-      var h = new $c_sci_$colon$colon(f(arg1), $m_sci_Nil$());
-      var t = h;
-      var rest = $as_sci_List(this$36.tail__O());
-      while ((rest !== $m_sci_Nil$())) {
-        var arg1$1 = $n(rest).head__O();
-        var nx = new $c_sci_$colon$colon(f(arg1$1), $m_sci_Nil$());
-        $n(t).sci_$colon$colon__f_next = nx;
-        t = nx;
-        rest = $as_sci_List($n(rest).tail__O());
-      }
-      var xs$5 = h;
-    }
-    var this$38 = $m_s_$less$colon$less$();
-    var ev = this$38.s_$less$colon$less$__f_singleton;
-    var $x_19 = $x_41.apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_40.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_39, $x_28, $n($x_27).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_26.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$Cap$SeqFrag(this$39, xs$5, ev)])))])));
+    var $x_21 = $x_23.apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_22.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$StringFrag(v$1)])));
+    var $x_20 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("grid md:grid-cols-2 gap-8 mt-8", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
+    var $x_19 = $m_sr_ScalaRunTime$();
     var $x_18 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("bg-white p-6 rounded-lg shadow-sm", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
     var $x_17 = $m_sr_ScalaRunTime$();
-    var this$45 = $n($m_Lscalatags_JsDom$all$().h3__Lscalatags_generic_TypedTag());
+    var this$21 = $n($m_Lscalatags_JsDom$all$().h3__Lscalatags_generic_TypedTag());
     var $x_14 = $m_sr_ScalaRunTime$();
     var $x_13 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text-xl font-semibold mb-4", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
     var $x_12 = $m_Llanguages$package$().Llanguages$package$__f_i18n;
-    var this$40 = $n($m_LGifts$Friends$().LGifts$Friends$__f_title);
-    var this$42 = $m_s_util_hashing_MurmurHash3$();
-    var this$43 = this$42.productHash__s_Product__I__Z__I(this$40, (-889275714), false);
-    var xs$6 = $x_14.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_13, $n($x_12).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(("" + this$43), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]));
-    var this$47 = $n(this$45.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$6));
+    var this$16 = $n($m_LGifts$Friends$().LGifts$Friends$__f_title);
+    var this$18 = $m_s_util_hashing_MurmurHash3$();
+    var this$19 = this$18.productHash__s_Product__I__Z__I(this$16, (-889275714), false);
+    var xs$3 = $x_14.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_13, $n($x_12).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(("" + this$19), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]));
+    var this$23 = $n(this$21.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$3));
     var $x_15 = $m_sr_ScalaRunTime$();
     $m_Lscalatags_JsDom$all$();
-    var v$5 = $n($m_LGifts$Friends$().LGifts$Friends$__f_title).LI18n__f_en;
-    var xs$7 = $x_15.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$StringFrag(v$5)]));
-    var $x_16 = this$47.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$7);
+    var v$2 = $n($m_LGifts$Friends$().LGifts$Friends$__f_title).LI18n__f_en;
+    var xs$4 = $x_15.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$StringFrag(v$2)]));
+    var $x_16 = this$23.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$4);
     var $x_11 = $as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().p__Lscalatags_generic_TypedTag());
     var $x_10 = $m_sr_ScalaRunTime$();
     var $x_9 = $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text-gray-600", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr);
     var $x_8 = $m_Llanguages$package$().Llanguages$package$__f_i18n;
-    var this$48 = $n($m_LGifts$Friends$().LGifts$Friends$__f_descriptions);
-    var this$50 = $m_s_util_hashing_MurmurHash3$();
-    var this$51 = this$50.productHash__s_Product__I__Z__I(this$48, (-889275714), false);
-    var $x_7 = $n($n($x_11).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_10.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_9, $n($x_8).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(("" + this$51), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]))));
+    var this$24 = $n($m_LGifts$Friends$().LGifts$Friends$__f_descriptions);
+    var this$26 = $m_s_util_hashing_MurmurHash3$();
+    var this$27 = this$26.productHash__s_Product__I__Z__I(this$24, (-889275714), false);
+    var $x_7 = $n($n($x_11).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_10.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_9, $n($x_8).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(("" + this$27), $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]))));
     var $x_6 = $m_sr_ScalaRunTime$();
     $m_Lscalatags_JsDom$all$();
-    var v$6 = $n($m_LGifts$Friends$().LGifts$Friends$__f_descriptions).LI18n__f_en;
-    var $x_5 = $x_7.apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_6.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$StringFrag(v$6)])));
+    var v$3 = $n($m_LGifts$Friends$().LGifts$Friends$__f_descriptions).LI18n__f_en;
+    var $x_5 = $x_7.apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_6.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([new $c_Lscalatags_JsDom$StringFrag(v$3)])));
     var $x_4 = $n($as_Lscalatags_JsDom$TypedTag($m_Lscalatags_JsDom$all$().div__Lscalatags_generic_TypedTag())).apply__sci_Seq__Lscalatags_JsDom$TypedTag($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("flex justify-center mt-4", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)])));
     var $x_3 = $m_sr_ScalaRunTime$();
-    var this$54 = $n($m_Lscalatags_JsDom$svgTags$().svg__Lscalatags_generic_TypedTag());
-    var xs$8 = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().xmlns__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("http://www.w3.org/2000/svg", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("h-6 w-6 text-pink-600", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$svgAttrs$().viewBox__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("0 0 20 20", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$svgAttrs$().fill__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("currentColor", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]));
-    var this$56 = $n(this$54.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$8));
+    var this$30 = $n($m_Lscalatags_JsDom$svgTags$().svg__Lscalatags_generic_TypedTag());
+    var xs$5 = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$all$().xmlns__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("http://www.w3.org/2000/svg", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$all$().cls__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("h-6 w-6 text-pink-600", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$svgAttrs$().viewBox__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("0 0 20 20", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$svgAttrs$().fill__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("currentColor", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]));
+    var this$32 = $n(this$30.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$5));
     var $x_2 = $m_sr_ScalaRunTime$();
-    var this$55 = $n($m_Lscalatags_JsDom$svgTags$().path__Lscalatags_generic_TypedTag());
-    var xs$9 = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$svgAttrs$().fillRule__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("evenodd", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$svgAttrs$().d__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$svgAttrs$().clipRule__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("evenodd", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]));
-    var xs$10 = $x_2.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([this$55.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$9)]));
-    var xs$11 = $x_58.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($x_57).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_56.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_55, $x_44, $n($x_43).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_42.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_19, $n($x_18).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_17.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_16, $x_5, $n($x_4).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_3.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([this$56.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$10)])))])))])))])))]));
-    var $x_1 = $x_59.initialize__O__O(this$57.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$11));
+    var this$31 = $n($m_Lscalatags_JsDom$svgTags$().path__Lscalatags_generic_TypedTag());
+    var xs$6 = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($m_Lscalatags_JsDom$svgAttrs$().fillRule__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("evenodd", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$svgAttrs$().d__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr), $n($m_Lscalatags_JsDom$svgAttrs$().clipRule__Lscalatags_generic_Attr()).$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("evenodd", $m_Lscalatags_JsDom$all$().Lscalatags_JsDom$all$__f_stringAttr)]));
+    var xs$7 = $x_2.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([this$31.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$6)]));
+    var xs$8 = $x_35.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($x_34).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_33.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_32, $x_21, $n($x_20).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_19.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$n($x_18).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_17.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([$x_16, $x_5, $n($x_4).apply__sci_Seq__Lscalatags_JsDom$TypedTag($x_3.wrapRefArray__AO__sci_ArraySeq(new ($d_Lscalatags_generic_Modifier.getArrayOf().constr)([this$32.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$7)])))])))])))])))]));
+    var $x_1 = $x_36.initialize__O__O(this$33.apply__sci_Seq__Lscalatags_JsDom$TypedTag(xs$8));
   }
   return $as_Lscalatags_generic_TypedTag($x_1);
 }

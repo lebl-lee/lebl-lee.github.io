@@ -455,14 +455,14 @@ import scala.scalajs.js.Date
       p(cls := "text-lg mb-6", i18n := Gifts.description.c)(Gifts.description.en),
       div(cls := "grid md:grid-cols-2 gap-8 mt-8")(
         // Family Members Card
-        div(cls := "bg-white p-6 rounded-lg shadow-sm")(
-          h3(cls := "text-xl font-semibold mb-4", i18n := Gifts.FamilyMembers.title.c)(Gifts.FamilyMembers.title.en),
-          p(cls := "text-gray-600 mb-4", i18n := Gifts.FamilyMembers.description.c)(Gifts.FamilyMembers.description.en),
-          ul(cls := "text-center text-gray-600 mb-4 space-y-2")(
-            Gifts.FamilyMembers.instructions.map: i =>
-              li(cls := "flex justify-center", i18n := i.c)(i.en)
-          )
-        ),
+//        div(cls := "bg-white p-6 rounded-lg shadow-sm")(
+//          h3(cls := "text-xl font-semibold mb-4", i18n := Gifts.FamilyMembers.title.c)(Gifts.FamilyMembers.title.en),
+//          p(cls := "text-gray-600 mb-4", i18n := Gifts.FamilyMembers.description.c)(Gifts.FamilyMembers.description.en),
+//          ul(cls := "text-center text-gray-600 mb-4 space-y-2")(
+//            Gifts.FamilyMembers.instructions.map: i =>
+//              li(cls := "flex justify-center", i18n := i.c)(i.en)
+//          )
+//        ),
         // Friends Card
         div(cls := "bg-white p-6 rounded-lg shadow-sm")(
           h3(cls := "text-xl font-semibold mb-4", i18n := Gifts.Friends.title.c)(Gifts.Friends.title.en),
