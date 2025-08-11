@@ -35,8 +35,8 @@ object Wedding {
 }
 
 object Rsvp:
-  val capacity = 40
-  val confirmed = 36
+  val capacity = 42
+  val confirmed = 40
   val confirmedRateInt = (1.0/capacity*confirmed)*100.toInt
 
 object WeddingTimeline {
